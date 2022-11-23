@@ -12,6 +12,7 @@ class Plugin extends Base
     {
         // Template - Override name should be camelCase e.g. pluginNameExampleCamelCase
         $this->template->setTemplateOverride('project_tag/index', 'kanboardTags:project_tag/index');
+        $this->template->setTemplateOverride('tag/index', 'kanboardTags:tag/index');
 
         // CSS - Asset Hook - keep filename lowercase
         $this->hook->on('template:layout:css', array('template' => 'plugins/KanboardTags/Assets/css/kanboard-tags.css'));
