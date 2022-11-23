@@ -1,38 +1,20 @@
 <?php
 
-namespace Kanboard\Plugin\PluginNameExampleStudlyCaps;
+namespace Kanboard\Plugin\KanboardTags;
 
-use Kanboard\Core\Plugin\Base;
 use Kanboard\Core\Translator;
-// use Kanboard\Plugin\PluginNameExampleStudlyCaps\AgeHelper;  // Helper Class and Filename should be exact
+use Kanboard\Core\Plugin\Base;
 
 class Plugin extends Base
 {
+
     public function initialize()
     {
-        // Template Override
-        //  - Override name should be camelCase e.g. pluginNameExampleCamelCase
-        $this->template->setTemplateOverride('action/index', 'pluginNameExampleCamelCase:action/index');
+        // Template - Override name should be camelCase e.g. pluginNameExampleCamelCase
+        $this->template->setTemplateOverride('project_tag/index', 'kanboardTags:project_tag/index');
 
-        // CSS - Asset Hook
-        //  - Keep filename lowercase
-        $this->hook->on('template:layout:css', array('template' => 'plugins/PluginNameExampleStudlyCaps/Assets/css/plugin-name.css'));
-
-        // JS - Asset Hook
-        //  - Keep filename lowercase
-        $this->hook->on('template:layout:js', array('template' => 'plugins/PluginNameExampleStudlyCaps/Assets/js/plugin-name.js'));
-
-        // Views - Template Hook
-        //  - Override name should start lowercase e.g. pluginNameExampleCamelCase
-        $this->template->hook->attach('template:project-header:view-switcher-before-project-overview', 'pluginNameExampleCamelCase:project_header/actions');
-
-        // Extra Page - Routes
-        //  - Example: $this->route->addRoute('/my/custom/route', 'myController', 'myAction', 'myplugin');
-        $this->route->addRoute('/settings/support', 'TechnicalSupportController', 'show', 'KanboardSupport');
-
-        // Helper
-        //  - Example: $this->helper->register('helperClassNameCamelCase', '\Kanboard\Plugin\PluginNameExampleStudlyCaps\Helper\HelperNameExampleStudlyCaps');
-        $this->helper->register(' ', '\Kanboard\Plugin\  \Helper\  ');
+        // CSS - Asset Hook - keep filename lowercase
+        $this->hook->on('template:layout:css', array('template' => 'plugins/KanboardTags/Assets/css/kanboard-tags.css'));
     }
 
     public function onStartup()
@@ -42,18 +24,17 @@ class Plugin extends Base
 
     public function getPluginName()
     {
-        // Plugin Name MUST be identical to namespace for Plugin Directory to detect updated versions
-        return 'PluginNameExampleStudlyCaps';
+        return 'KanboardTags';
     }
 
     public function getPluginDescription()
     {
-        return t('description text');
+        return t('Simplify tags');
     }
 
     public function getPluginAuthor()
     {
-        return ' ';
+        return 'aljawaid';
     }
 
     public function getPluginVersion()
@@ -63,15 +44,12 @@ class Plugin extends Base
 
     public function getCompatibleVersion()
     {
-        // Examples:
-        // >=1.0.37
-        // <1.0.37
-        // <=1.0.37
         return '>=1.2.20';
     }
 
     public function getPluginHomepage()
     {
-        return 'https://github.com/ /url';
+        return 'https://github.com/aljawaid/KanboardTags';
     }
+
 }

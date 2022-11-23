@@ -1,8 +1,8 @@
-# `Plugin Name`
+# KanboardTags
 
 #### _Plugin for [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software")_
 
-`Brief intro`
+`Work in progress - not suitable for production until this description changes`
 
 
 Features
@@ -23,7 +23,7 @@ Screenshots
 Usage
 -------------
 
-Go to `Settings` &#10562;
+Go to `Project Settings` &#10562; `Tags`
 
 
 Compatibility
@@ -83,7 +83,7 @@ Translations
 Authors & Contributors
 ----------------------
 
-- [name](https://github.com/url) - Author
+- [aljawaid](https://github.com/aljawaid) - Author
 - _Contributors welcome_
 
 
