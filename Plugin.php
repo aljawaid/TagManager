@@ -16,6 +16,18 @@ class Plugin extends Base
 
         // CSS - Asset Hook - keep filename lowercase
         $this->hook->on('template:layout:css', array('template' => 'plugins/TagManager/Assets/css/tag-manager.css'));
+
+        // Add Filter
+        $tagmodel = $this->tagModel;
+        $this->template->hook->attachCallable('template:app:filters-helper:after', 'tagManager:tagfilter', function($array = array()) use ($tagmodel) {
+            if(!empty($array) && $array['id'] >= 1){
+                $project = $this->projectModel->getById($array['id']);
+                return ['taglist' => $tagmodel->getAssignableList($array['id'], $project['enable_global_tags'])];
+            } else {
+                // get global tags
+                return ['taglist' => $this->db->hashtable($tagmodel::TABLE)->eq('project_id', 0)->asc('name')->getAll('id', 'name')];
+            }
+        });
     }
 
     public function onStartup()

@@ -8,8 +8,9 @@
 Features
 -------------
 
-- main features list 
-- main features list
+- Show global tags with project tags
+- Show tag counts
+- Add Tag Filter to Project Board
 
 
 Screenshots
@@ -28,6 +29,11 @@ Go to `Project Settings` &#10562; `Tags`
 **_or_**
 
 Go to `Settings` &#10562; `Global Tags`
+
+**_or_**
+
+Go to `Project Board` &#10562; `Tag Filter`
+
 
 Compatibility
 -------------
@@ -87,6 +93,7 @@ Authors & Contributors
 ----------------------
 
 - [aljawaid](https://github.com/aljawaid) - Author
+- [Timo Stahl](https://github.com/TimoStahl/kanboard_plugin_taglist) - Tag Filter feature
 - _Contributors welcome_
 
 
