@@ -5,7 +5,10 @@
 ?>
 
     <div id="ProjectTags" class="tag-page-header">
-        <h2 class=""><?= t('Project tags') ?></h2>
+        <h2 class="">
+            <img src="/plugins/TagManager/Assets/icons/project-tags.svg" width="22px" height="22px" class="project-tags">
+            <?= t('Project tags') ?>
+        </h2>
         <ul class="no-bullet">
             <?php if (!empty($tags)): ?>
                 <li class=""><?= $tagsCount ?> <?= t('Tags apply to this project') ?></li>
@@ -36,7 +39,10 @@
 
 <?php else: ?>
     <details <?php if ($tagsCount < 10): ?> open="" <?php endif ?> class="tag-section-title">
-        <summary class="sub-header"><h3>Project Tags</h3></summary>
+        <summary class="sub-header">
+            <img src="/plugins/TagManager/Assets/icons/project-tags.svg" width="22px" height="22px" class="project-tags">
+            <h3>Project Tags</h3>
+        </summary>
         <p class="">The tags in this list are specific to this project only</p>
         <table id="" class="table-striped table-scrolling">
             <tr class="">
@@ -72,7 +78,9 @@
 <?php endif ?>
 
     <details <?php if ($gtagsCount < 10): ?> open="" <?php endif ?> class="tag-section-title">
-        <summary class="sub-header"><h3 class="">Global Tags</h3></summary>
+        <summary class="sub-header">
+            <img src="/plugins/TagManager/Assets/icons/global-tags.svg" width="22px" height="22px" class="">
+            <h3 class="">Global Tags</h3></summary>
         <p class="">The tags in this list are global and available for any project</p>
 
 

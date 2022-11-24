@@ -92,6 +92,10 @@ a:hover { color: var(--pp-red-alt-2) !important; }
     cursor: pointer;
 }
 
+.tag-page-header img, .sub-header img {
+    vertical-align: text-bottom;
+}
+
 .sub-header h3 {
     display: inline;
 }
@@ -122,17 +126,4 @@ a:hover { color: var(--pp-red-alt-2) !important; }
   }
 }
 
-.tag-section-title p, .tag-section-title table {
-  animation: animateUp 0.3s linear forwards;
-}
-
-@keyframes animateUp {
-  0% {
-    opacity: 1;
-    transform: translatey(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translatey(-15px);
-  }
-}
+.global-tag-settings-form {}
