@@ -23,6 +23,8 @@
     --link-color-primary: #36C;
     --blue-icon-dark: #034CA6;
     --panel-background: #EEEEEE;
+    --tag-header-page-margin: 5px 10px 10px 15px;
+    --tag-page-margin: 5px 10px 15px 5px;
 }
 
 .pp-blue { color: var(--pp-blue); fill: var(--pp-blue); }
@@ -51,3 +53,86 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 .text-center { text-align: center; }
 
 .relative { position: relative; }
+
+#main .tag-page-header {
+    margin: var(--tag-header-page-margin);
+    font-size: small;
+    padding: 0px 0px 5px 2px !important;
+    background-color: white !important;
+}
+
+.tag-page-header h2 {
+    border-bottom: 2px outset var(--blue-border-gradient-match) !important;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    font-size: 1.6em;
+    margin-top: 0;
+    font-weight: 700;
+}
+
+.tag-page-header ul {
+    text-align: left;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.tag-page-header ul li {
+    font-size: 1.2em;
+}
+
+.tag-page-header li {
+    display: inline;
+    padding-right: 15px;
+}
+
+.global-tag-settings-form {}
+
+.tag-section-title {
+    margin: var(--tag-page-margin);
+    cursor: pointer;
+}
+
+.sub-header h3 {
+    display: inline;
+}
+
+.tag-section-title summary::marker {
+  /*content: '\27A4';*/
+  font-size: 1.4em;
+}
+
+.tag-section-title[open] summary::marker {
+  /*content: '\27A4';*/
+  /*transform: rotate(90deg);*/
+}
+
+.tag-section-title[open] p, .tag-section-title[open] table {
+  animation: animateDown 0.3s linear forwards;
+  margin-top: 10px;
+}
+
+@keyframes animateDown {
+  0% {
+    opacity: 0;
+    transform: translatey(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translatey(0);
+  }
+}
+
+.tag-section-title p, .tag-section-title table {
+  animation: animateUp 0.3s linear forwards;
+}
+
+@keyframes animateUp {
+  0% {
+    opacity: 1;
+    transform: translatey(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translatey(-15px);
+  }
+}

@@ -4,7 +4,7 @@
     $tagsCount = count($tags);
 ?>
 
-    <div id="ProjectTags" class="page-header">
+    <div id="ProjectTags" class="tag-page-header">
         <h2 class=""><?= t('Project tags') ?></h2>
         <ul class="no-bullet">
             <?php if (!empty($tags)): ?>
@@ -35,8 +35,8 @@
     <p class="alert"><?= t('There is no specific tag for this project at the moment.') ?></p>
 
 <?php else: ?>
-    <details <?php if ($tagsCount < 10): ?> open="" <?php endif ?> class="">
-        <summary class="sub-header">Project Tags</summary>
+    <details <?php if ($tagsCount < 10): ?> open="" <?php endif ?> class="tag-section-title">
+        <summary class="sub-header"><h3>Project Tags</h3></summary>
         <p class="">The tags in this list are specific to this project only</p>
         <table id="" class="table-striped table-scrolling">
             <tr class="">
@@ -71,8 +71,8 @@
     </details>
 <?php endif ?>
 
-    <details <?php if ($gtagsCount < 10): ?> open="" <?php endif ?> class="">
-        <summary class="sub-header">Global Tags</summary>
+    <details <?php if ($gtagsCount < 10): ?> open="" <?php endif ?> class="tag-section-title">
+        <summary class="sub-header"><h3 class="">Global Tags</h3></summary>
         <p class="">The tags in this list are global and available for any project</p>
 
 
