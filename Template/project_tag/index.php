@@ -77,7 +77,7 @@
     </details>
 <?php endif ?>
 
-    <details <?php if ($gtagsCount < 10): ?> open="" <?php endif ?> class="tag-section-title">
+    <details <?php if ($gTagsCount < 10): ?> open="" <?php endif ?> class="tag-section-title">
         <summary class="sub-header">
             <img src="/plugins/TagManager/Assets/icons/global-tags.svg" width="22px" height="22px" class="">
             <h3 class="">Global Tags</h3></summary>
