@@ -1,4 +1,4 @@
-# KanboardTags
+# TagManager
 
 #### _Plugin for [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software")_
 
@@ -25,6 +25,9 @@ Usage
 
 Go to `Project Settings` &#10562; `Tags`
 
+**_or_**
+
+Go to `Settings` &#10562; `Global Tags`
 
 Compatibility
 -------------
@@ -34,7 +37,7 @@ Compatibility
 #### Other Plugins & Action Plugins
 - _No known issues_
 #### Core Files & Templates
-- `01` Template override
+- `02` Template override
 - _No database changes_
 
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Kanboard\Plugin\KanboardTags;
+namespace Kanboard\Plugin\TagManager;
 
 use Kanboard\Core\Translator;
 use Kanboard\Core\Plugin\Base;
@@ -11,11 +11,11 @@ class Plugin extends Base
     public function initialize()
     {
         // Template - Override name should be camelCase e.g. pluginNameExampleCamelCase
-        $this->template->setTemplateOverride('project_tag/index', 'kanboardTags:project_tag/index');
-        $this->template->setTemplateOverride('tag/index', 'kanboardTags:tag/index');
+        $this->template->setTemplateOverride('project_tag/index', 'tagManager:project_tag/index');
+        $this->template->setTemplateOverride('tag/index', 'tagManager:tag/index');
 
         // CSS - Asset Hook - keep filename lowercase
-        $this->hook->on('template:layout:css', array('template' => 'plugins/KanboardTags/Assets/css/kanboard-tags.css'));
+        $this->hook->on('template:layout:css', array('template' => 'plugins/TagManager/Assets/css/tag-manager.css'));
     }
 
     public function onStartup()
@@ -25,7 +25,7 @@ class Plugin extends Base
 
     public function getPluginName()
     {
-        return 'KanboardTags';
+        return 'TagManager';
     }
 
     public function getPluginDescription()
@@ -50,7 +50,7 @@ class Plugin extends Base
 
     public function getPluginHomepage()
     {
-        return 'https://github.com/aljawaid/KanboardTags';
+        return 'https://github.com/aljawaid/TagManager';
     }
 
 }
