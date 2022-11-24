@@ -22,7 +22,7 @@
             <li class="">
                 <?= $this->modal->medium('plus', t('Add new global tag'), 'TagController', 'create') ?></li>
             <?php endif ?>
-            <div class="panel global-tag-settings-form">
+            <li class="panel global-tag-settings-form">
                 <form method="post" action="<?= $this->url->href('ProjectTagController', 'updateSettings', array('project_id' => $project['id'])) ?>" autocomplete="off">
                     <?= $this->form->csrf() ?>
 
@@ -30,7 +30,7 @@
 
                     <?= $this->modal->submitButtons() ?>
                 </form>
-            </div>
+            </li>
         </ul>
     </div>
 

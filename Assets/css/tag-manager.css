@@ -98,32 +98,40 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 
 .sub-header h3 {
     display: inline;
+    font-weight: 600;
 }
 
 .tag-section-title summary::marker {
-  /*content: '\27A4';*/
-  font-size: 1.4em;
-}
-
-.tag-section-title[open] summary::marker {
-  /*content: '\27A4';*/
-  /*transform: rotate(90deg);*/
+    /*content: '\27A4';*/
+    font-size: 1.4em;
 }
 
 .tag-section-title[open] p, .tag-section-title[open] table {
-  animation: animateDown 0.3s linear forwards;
-  margin-top: 10px;
+    animation: animateDown 0.3s linear forwards;
+    margin-top: 10px;
 }
 
 @keyframes animateDown {
-  0% {
-    opacity: 0;
-    transform: translatey(-15px);
-  }
-  100% {
-    opacity: 1;
-    transform: translatey(0);
-  }
+    0% {
+        opacity: 0;
+        transform: translatey(-15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translatey(0);
+    }
 }
 
-.global-tag-settings-form {}
+.global-tag-settings-form form, .global-tag-settings-form form label {
+    display: inline-block;
+    margin-top: 0;
+}
+
+.global-tag-settings-form form .js-submit-buttons-rendered {
+    display: inline-block;
+}
+
+.global-tag-settings-form form .js-submit-buttons-rendered .form-actions button {
+    padding: 0px 5px 2px 5px;
+    margin-left: 5px;
+}
