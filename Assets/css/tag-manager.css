@@ -70,22 +70,64 @@ a:hover { color: var(--pp-red-alt-2) !important; }
     font-weight: 700;
 }
 
-.tag-page-header ul {
-    text-align: left;
-    margin-top: 5px;
+.tag-bar {
+    margin: auto;
+    display: block;
+    width: 97%;
+    text-align: center;
+    vertical-align: top;
+}
+
+.project-tags-bar {
+    width: fit-content;
     display: inline-block;
+    border: 1px solid var(--blue-border-gradient-match);
+    margin: auto 10px;
+    border-radius: var(--border-radius);
+    height: 90px;
+    padding: 0 10px;
+    position: relative;
 }
 
-.tag-page-header ul li {
-    font-size: 1.2em;
+.tag-bar .project-tags-bar img, .tag-bar .global-tags-bar img {
+    position: absolute;
+    left: 5px;
+    top: 3px;
+    width: 32px;
 }
 
-.tag-page-header li {
-    display: inline;
-    padding-right: 15px;
+.global-tags-bar {
+    width: fit-content;
+    display: inline-block;
+    border: 1px solid var(--blue-border-gradient-match);
+    margin: auto 10px;
+    border-radius: var(--border-radius);
+    height: 90px;
+    padding: 0 10px;
+    vertical-align: inherit;
+    position: relative;
 }
 
-.global-tag-settings-form {}
+.project-tags-bar h3, .global-tags-bar h3 {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.project-tags-bar ul li, .global-tags-bar ul li {
+    display: inline-block;
+    padding: 8px 4px;
+}
+
+.global-tag-settings-form {
+    display: inline !important;
+    padding: 8px;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--blue-border-gradient-match);
+    overflow: auto;
+    margin-left: 10px !important;
+    padding-right: 5px !important;
+}
 
 .tag-section-title {
     margin: var(--tag-page-margin);
@@ -134,4 +176,8 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 .global-tag-settings-form form .js-submit-buttons-rendered .form-actions button {
     padding: 0px 5px 2px 5px;
     margin-left: 5px;
+}
+
+.global-tag-settings-form form .js-submit-buttons-rendered .form-actions {
+    padding-top: 0;
 }

@@ -9,29 +9,42 @@
             <img src="/plugins/TagManager/Assets/icons/project-tags.svg" width="22px" height="22px" class="project-tags">
             <?= t('Project tags') ?>
         </h2>
-        <ul class="no-bullet">
-            <?php if (!empty($tags)): ?>
-                <li class=""><?= $tagsCount ?> <?= t('Tags apply to this project') ?></li>
-            <?php endif ?>
-            <?php if (!empty($gTags)): ?>
-                <li class=""><?= $gTagsCount ?> <?= t('Global Tags Available') ?></li>
-            <?php endif ?>
+    </div>
+    <div class="tag-bar">
+        <div class="project-tags-bar">
+            <img src="/plugins/TagManager/Assets/icons/project-tags.svg" class="project-tags">
+            <h3 class="">Project</h3>
+            <ul class="no-bullet">
+                <?php if (!empty($tags)): ?>
+                    <li class=""><?= $tagsCount ?> <?= t('Tags apply to this project') ?></li>
+                <?php endif ?>
             <li class="">
-                <?= $this->modal->medium('plus', t('Add new project tag'), 'ProjectTagController', 'create', array('project_id' => $project['id'])) ?></li>
-            <?php if ($this->user->isAdmin()): ?>
-            <li class="">
-                <?= $this->modal->medium('plus', t('Add new global tag'), 'TagController', 'create') ?></li>
-            <?php endif ?>
-            <li class="panel global-tag-settings-form">
-                <form method="post" action="<?= $this->url->href('ProjectTagController', 'updateSettings', array('project_id' => $project['id'])) ?>" autocomplete="off">
-                    <?= $this->form->csrf() ?>
-
-                    <?= $this->form->checkbox('enable_global_tags', t('Enable global tags for this project'), 1, $project['enable_global_tags'] == 1) ?>
-
-                    <?= $this->modal->submitButtons() ?>
-                </form>
+                <?= $this->modal->medium('plus', t('Add new project tag'), 'ProjectTagController', 'create', array('project_id' => $project['id'])) ?>
             </li>
-        </ul>
+
+            </ul>
+        </div>
+        <div class="global-tags-bar">
+            <img src="/plugins/TagManager/Assets/icons/global-tags.svg" class="">
+            <h3 class="">Global</h3>
+            <ul class="no-bullet">
+                <?php if (!empty($gTags)): ?>
+                    <li class=""><?= $gTagsCount ?> <?= t('Global Tags Available') ?></li>
+                <?php endif ?>
+                <?php if ($this->user->isAdmin()): ?>
+                    <li class="">
+                        <?= $this->modal->medium('plus', t('Add new global tag'), 'TagController', 'create') ?>
+                    </li>
+                <?php endif ?>
+                <li class="global-tag-settings-form">
+                    <form method="post" action="<?= $this->url->href('ProjectTagController', 'updateSettings', array('project_id' => $project['id'])) ?>" autocomplete="off">
+                        <?= $this->form->csrf() ?>
+                        <?= $this->form->checkbox('enable_global_tags', t('Enable global tags for this project'), 1, $project['enable_global_tags'] == 1) ?>
+                        <?= $this->modal->submitButtons() ?>
+                    </form>
+                </li>
+            </ul>
+        </div>
     </div>
 
 <?php if (empty($tags)): ?>
