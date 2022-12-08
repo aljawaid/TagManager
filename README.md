@@ -43,7 +43,7 @@ Compatibility
 #### Other Plugins & Action Plugins
 - _No known issues_
 #### Core Files & Templates
-- `02` Template override
+- `02` Template overrides
 - _No database changes_
 
 
@@ -85,8 +85,8 @@ _Note: The `/plugins` folder is case-sensitive._
 Translations
 ------------
 
-- English (UK)
 - _Contributors welcome_
+- _Starter template available_
 
 
 Authors & Contributors
