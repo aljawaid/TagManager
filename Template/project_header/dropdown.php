@@ -1,3 +1,7 @@
+<?php
+    $tags = $this->model->tagModel->getAllByProject($project['id']);
+    $tagsCount = count($tags);
+?>
 <li <?= $this->app->checkMenuSelection('ProjectTagController') ?>>
     <svg width="20px" height="20px" class="project-tags v-middle" version="1.1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill='CurrentColor'>
     <g fill="none" fill-rule="evenodd" id="" stroke="none" stroke-width="1">
@@ -7,4 +11,5 @@
     </g>
 </svg>
     <?= $this->url->link(t('Tags'), 'ProjectTagController', 'index', array('project_id' => $project['id'])) ?>
+    <span class="tag-menu-count"><?= $tagsCount ?></span>
 </li>
