@@ -222,6 +222,20 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 .dropdown-submenu-open li:not(.no-hover):hover svg {
   color: var(--pp-white);
 }
+
+.project-tags-table {}
+
+.project-tags-table th {}
+
+.project-tags-table tr td ul {}
+
+.project-tags-table tr td ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.tag-actions {}
+
 .fa-project-delete-tag {
     vertical-align: top;
     width: 26px;

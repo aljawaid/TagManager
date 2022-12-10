@@ -57,7 +57,7 @@
             <h3 class=""><?= t('Project Tags') ?></h3>
         </summary>
         <p class="tag-title-text"><?= t('The tags in this list are specific to this project') ?></p>
-        <table id="" class="table-striped table-scrolling">
+        <table id="" class="project-tags-table table-striped table-scrolling">
             <tr class="">
                 <th class=""><?= t('Tag') ?></th>
                 <th class=""><?= t('Colour') ?></th>
@@ -68,7 +68,7 @@
             <tr class="">
                 <td class=""><?= $this->text->e($tag['name']) ?></td>
                 <td class=""><?= $this->text->e($colors[$tag['color_id']] ?? '') ?></td>
-                <td class="">
+                <td class="tag-actions">
                     <ul class="">
                         <li class="">
                             <?= $this->modal->medium('edit', t('Edit'), 'ProjectTagController', 'edit', array('tag_id' => $tag['id'], 'project_id' => $project['id'])) ?>
