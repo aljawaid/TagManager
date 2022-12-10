@@ -7,13 +7,13 @@
     <div id="ProjectTags" class="tag-page-header">
         <h2 class="">
             <img src="/plugins/TagManager/Assets/icons/project-tags.svg" width="22px" height="22px" class="project-tags">
-            <?= t('Project tags') ?>
+            <?= t('Project Tags') ?>
         </h2>
     </div>
     <div class="tag-bar">
         <div class="project-tags-bar">
             <img src="/plugins/TagManager/Assets/icons/project-tags.svg" class="project-tags">
-            <h3 class="">Project</h3>
+            <h3 class=""><?= t('Project') ?></h3>
             <ul class="no-bullet">
                 <?php if (!empty($tags)): ?>
                     <li class=""><?= $tagsCount ?> <?= t('Tags apply to this project') ?></li>
@@ -26,7 +26,7 @@
         </div>
         <div class="global-tags-bar">
             <img src="/plugins/TagManager/Assets/icons/global-tags.svg" class="">
-            <h3 class="">Global</h3>
+            <h3 class=""><?= t('Global') ?></h3>
             <ul class="no-bullet">
                 <?php if (!empty($gTags)): ?>
                     <li class=""><?= $gTagsCount ?> <?= t('Global Tags Available') ?></li>
@@ -54,15 +54,15 @@
     <details <?php if ($tagsCount < 10): ?> open="" <?php endif ?> class="tag-section-title">
         <summary class="sub-header">
             <img src="/plugins/TagManager/Assets/icons/project-tags.svg" width="22px" height="22px" class="project-tags">
-            <h3>Project Tags</h3>
+            <h3 class=""><?= t('Project Tags') ?></h3>
         </summary>
-        <p class="">The tags in this list are specific to this project only</p>
+        <p class="tag-title-text"><?= t('The tags in this list are specific to this project') ?></p>
         <table id="" class="table-striped table-scrolling">
             <tr class="">
                 <th class=""><?= t('Tag') ?></th>
-                <th class=""><?= t('Color') ?></th>
-                <th class="">Options</th>
-                <th class="">Tag ID</th>
+                <th class=""><?= t('Colour') ?></th>
+                <th class=""><?= t('Options') ?></th>
+                <th class=""><?= t('Tag ID') ?></th>
             </tr>
         <?php foreach ($tags as $tag): ?>
             <tr class="">
@@ -94,7 +94,7 @@
         <summary class="sub-header">
             <img src="/plugins/TagManager/Assets/icons/global-tags.svg" width="22px" height="22px" class="">
             <h3 class="">Global Tags</h3></summary>
-        <p class="">The tags in this list are global and available for any project</p>
+        <p class="tag-title-text"><?= t('The tags in this list are global and available for any project') ?></p>
 
 
 <?php if (empty($gTags)): ?>
