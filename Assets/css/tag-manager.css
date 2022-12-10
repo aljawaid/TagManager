@@ -131,9 +131,12 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 
 .tag-section-title {
     margin: var(--tag-page-margin);
-    cursor: pointer;
 }
 
+.tag-section-title .sub-header {
+    cursor: pointer;
+
+}
 .tag-page-header img, .sub-header img {
     vertical-align: text-bottom;
 }
