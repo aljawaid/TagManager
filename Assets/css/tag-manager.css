@@ -146,6 +146,11 @@ a:hover { color: var(--pp-red-alt-2) !important; }
     font-weight: 600;
 }
 
+.tag-title-text {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
 .tag-section-title summary::marker {
     /*content: '\27A4';*/
     font-size: 1.4em;
