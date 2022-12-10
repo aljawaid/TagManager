@@ -79,7 +79,7 @@
                             </li>
                         <?php endif ?>
                         <li class="">
-                            <?= $this->modal->confirm('trash-o', t('Remove'), 'ProjectTagController', 'confirm', array('tag_id' => $tag['id'], 'project_id' => $project['id'])) ?>
+                            <?= $this->modal->confirm('project-delete-tag', t('Delete'), 'ProjectTagController', 'confirm', array('tag_id' => $tag['id'], 'project_id' => $project['id'])) ?>
                         </li>
                     </ul>
                 </td>
