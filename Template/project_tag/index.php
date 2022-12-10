@@ -93,18 +93,18 @@
     <details <?php if ($gTagsCount < 10): ?> open="" <?php endif ?> class="tag-section-title">
         <summary class="sub-header">
             <img src="/plugins/TagManager/Assets/icons/global-tags.svg" width="22px" height="22px" class="">
-            <h3 class="">Global Tags</h3></summary>
+            <h3 class=""><?= t('Global Tags') ?></h3></summary>
         <p class="tag-title-text"><?= t('The tags in this list are global and available for any project') ?></p>
 
 
 <?php if (empty($gTags)): ?>
-    <p class="alert"><?= t('There is no global tags at the moment.') ?></p>
+    <p class="alert"><?= t('There are no global tags at the moment.') ?></p>
 
 <?php else: ?>
     <table id="" class="table-striped table-scrolling">
         <tr class="">
             <th class=""><?= t('Tag') ?></th>
-            <th class=""><?= t('Color') ?></th>
+            <th class=""><?= t('Colour') ?></th>
         </tr>
         <?php foreach ($gTags as $gTag): ?>
             <tr class="">
