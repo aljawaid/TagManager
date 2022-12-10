@@ -19,7 +19,7 @@
                     <li class=""><?= $tagsCount ?> <?= t('Tags apply to this project') ?></li>
                 <?php endif ?>
             <li class="">
-                <?= $this->modal->medium('plus-project', t('Add new project tag'), 'ProjectTagController', 'create', array('project_id' => $project['id'])) ?>
+                <?= $this->modal->medium('plus-project-tag', t('Add Project Tag'), 'ProjectTagController', 'create', array('project_id' => $project['id'])) ?>
             </li>
 
             </ul>
@@ -33,7 +33,7 @@
                 <?php endif ?>
                 <?php if ($this->user->isAdmin()): ?>
                     <li class="">
-                        <?= $this->modal->medium('plus-global', t('Add new global tag'), 'TagController', 'create') ?>
+                        <?= $this->modal->medium('plus-global-tag', t('Add Global Tag'), 'TagController', 'create') ?>
                     </li>
                 <?php endif ?>
                 <li class="global-tag-settings-form">
