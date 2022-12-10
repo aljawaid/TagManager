@@ -11,6 +11,7 @@ Features
 - Show global tags with project tags
 - Show tag counts
 - Add Tag Filter to Project Board
+- Add tags entry as project menu item with count
 
 
 Screenshots

@@ -193,3 +193,7 @@ a:hover { color: var(--pp-red-alt-2) !important; }
     vertical-align: top;
     width: 26px;
 }
+
+.v-middle {
+    vertical-align: middle;
+}

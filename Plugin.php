@@ -14,6 +14,10 @@ class Plugin extends Base
         $this->template->setTemplateOverride('project_tag/index', 'tagManager:project_tag/index');
         $this->template->setTemplateOverride('tag/index', 'tagManager:tag/index');
 
+        // Views - Template Hook
+        //  - Override name should start lowercase e.g. pluginNameExampleCamelCase
+        $this->template->hook->attach('template:project:dropdown', 'tagManager:project_header/dropdown');
+
         // CSS - Asset Hook - keep filename lowercase
         $this->hook->on('template:layout:css', array('template' => 'plugins/TagManager/Assets/css/tag-manager.css'));
 
