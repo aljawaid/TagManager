@@ -234,7 +234,14 @@ a:hover { color: var(--pp-red-alt-2) !important; }
     display: inline-block;
 }
 
-.tag-actions {}
+.tag-actions ul li a {
+    height: 28px;
+    display: inline-block;
+    border: 1px solid var(--blue-border-gradient-match);
+    text-decoration: none !important;
+    padding: 2px 5px 2px 3px;
+    border-radius: var(--border-radius);
+}
 
 .fa-project-delete-tag {
     vertical-align: top;
