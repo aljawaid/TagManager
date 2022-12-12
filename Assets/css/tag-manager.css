@@ -137,7 +137,7 @@ a:hover { color: var(--pp-red-alt-2) !important; }
     cursor: pointer;
 
 }
-.tag-page-header img, .sub-header img {
+.tag-page-header img, .sub-header img, .sub-header svg {
     vertical-align: text-bottom;
 }
 
