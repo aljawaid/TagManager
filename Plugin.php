@@ -17,6 +17,7 @@ class Plugin extends Base
         // Views - Template Hook
         //  - Override name should start lowercase e.g. pluginNameExampleCamelCase
         $this->template->hook->attach('template:project:dropdown', 'tagManager:project_header/dropdown');
+        $this->template->hook->attach('template:task:details:bottom', 'tagManager:task/details');
 
         // CSS - Asset Hook - keep filename lowercase
         $this->hook->on('template:layout:css', array('template' => 'plugins/TagManager/Assets/css/tag-manager.css'));

@@ -276,3 +276,19 @@ a:hover { color: var(--pp-red-alt-2) !important; }
     border-radius: var(--border-radius);
 }
 
+
+#TaskTagSummaryBar {
+    background-color: rgba(255, 255, 255, .9);
+    padding: .1em .4rem .3rem .4rem;
+    border-radius: var(--border-radius);
+    margin-top: 1em;
+}
+
+.task-tags {
+    position: relative;
+}
+
+#TaskTagSummaryBar > ul > i {
+    font-size: 1.3rem;
+    vertical-align: middle;
+}

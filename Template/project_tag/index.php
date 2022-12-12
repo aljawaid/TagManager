@@ -81,6 +81,8 @@
                 <th class=""><?= t('Colour') ?></th>
                 <th class=""><?= t('Options') ?></th>
                 <th class=""><?= t('Tag ID') ?></th>
+                <th class="" colspan="2"><?= t('CSS Class') ?></th>
+                <th class="" colspan="2"><?= t('CSS ID') ?></th>
             </tr>
         <?php foreach ($tags as $tag): ?>
             <tr class="">
@@ -114,6 +116,13 @@
                     </ul>
                 </td>
                 <td class=""><?= $this->text->e($tag['id']) ?></td>
+                <?php
+                $trimmed = str_replace(array(' ', '|'), '-', $this->text->e($tag['name']));
+                ?>
+                <td><code>class="tag-<?php echo strtolower($trimmed); ?>"</code></td>
+                <td><code>.tag-<?php echo strtolower($trimmed); ?></code></td>
+                <td><code>id="tagID-<?= $this->text->e($tag['id']) ?>"</code></td>
+                <td><code>#tagID-<?= $this->text->e($tag['id']) ?></code></td>
             </tr>
         <?php endforeach ?>
         </table>
