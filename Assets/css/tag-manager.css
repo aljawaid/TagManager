@@ -259,12 +259,20 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 .project-tags-table tr td ul li {
     list-style-type: none;
     display: inline-block;
+    margin: 2px 5px;
+    font-size: .9em;
 }
 
 .project-tag-list-item svg {
     vertical-align: middle;
     width: 30px;
     height: 30px;
+}
+
+.tag-actions {
+    padding: 0 5px;
+    width: 275px;
+    text-align: center;
 }
 
 .tag-actions ul li a {

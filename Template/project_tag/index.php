@@ -24,10 +24,9 @@
                 <?php if (!empty($tags)): ?>
                     <li class=""><?= $tagsCount ?> <?= t('Tags apply to this project') ?></li>
                 <?php endif ?>
-            <li class="">
-                <?= $this->modal->medium('plus-project-tag', t('Add Project Tag'), 'ProjectTagController', 'create', array('project_id' => $project['id'])) ?>
-            </li>
-
+                <li class="">
+                    <?= $this->modal->medium('plus-project-tag', t('Add Project Tag'), 'ProjectTagController', 'create', array('project_id' => $project['id'])) ?>
+                </li>
             </ul>
         </div>
         <div class="global-tags-bar">
@@ -79,7 +78,7 @@
             <tr class="">
                 <th class=""><?= t('Tag') ?></th>
                 <th class=""><?= t('Colour') ?></th>
-                <th class=""><?= t('Options') ?></th>
+                <th class=""><?= t('Actions') ?></th>
                 <th class=""><?= t('Tag ID') ?></th>
                 <th class="" colspan="2"><?= t('CSS Class') ?></th>
                 <th class="" colspan="2"><?= t('CSS ID') ?></th>
