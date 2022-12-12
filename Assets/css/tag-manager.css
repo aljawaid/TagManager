@@ -245,6 +245,10 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 
 .project-tags-table th {}
 
+.project-tags-table tr td {
+    vertical-align: middle;
+}
+
 .project-tags-table tr td ul {}
 
 .project-tags-table tr td ul li {
