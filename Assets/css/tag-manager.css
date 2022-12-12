@@ -252,6 +252,12 @@ a:hover { color: var(--pp-red-alt-2) !important; }
     display: inline-block;
 }
 
+.project-tag-list-item svg {
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+}
+
 .tag-actions ul li a {
     height: 28px;
     display: inline-block;
