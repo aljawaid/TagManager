@@ -71,18 +71,20 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 }
 
 .tag-bar {
-    margin: auto 10px;
-    display: inline;
+    /*margin: auto 10px;*/
+    /*display: inline;*/
     /*width: 97%;*/
     text-align: center;
     vertical-align: top;
+    display: block;
+    margin: auto;
 }
 
 .project-tags-bar {
     width: fit-content;
     display: inline-block;
     border: 1px solid var(--blue-border-gradient-match);
-    margin: auto 10px;
+    margin: 0px 10px 5px 10px;
     border-radius: var(--border-radius);
     height: 90px;
     padding: 0 10px;
@@ -100,7 +102,7 @@ a:hover { color: var(--pp-red-alt-2) !important; }
     width: fit-content;
     display: inline-block;
     border: 1px solid var(--blue-border-gradient-match);
-    margin: auto 10px;
+    margin: 0px 10px 5px 10px;
     border-radius: var(--border-radius);
     height: 90px;
     padding: 0 10px;
