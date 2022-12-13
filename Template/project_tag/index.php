@@ -78,10 +78,10 @@
             <tr class="">
                 <th class=""><?= t('Tag') ?></th>
                 <th class=""><?= t('Colour') ?></th>
-                <th class=""><?= t('Actions') ?></th>
                 <th class=""><?= t('Tag ID') ?></th>
-                <th class="" colspan="2"><?= t('CSS Class') ?></th>
                 <th class="" colspan="2"><?= t('CSS ID') ?></th>
+                <th class="" colspan="2"><?= t('CSS Class') ?></th>
+                <th class=""><?= t('Actions') ?></th>
             </tr>
         <?php foreach ($tags as $tag): ?>
             <tr class="">
@@ -99,6 +99,14 @@
                     <?= $this->text->e($tag['name']) ?>
                 </td>
                 <td class=""><?= $this->text->e($colors[$tag['color_id']] ?? '') ?></td>
+                <td class=""><?= $this->text->e($tag['id']) ?></td>
+                <?php
+                $trimmed = str_replace(array(' ', '|'), '-', $this->text->e($tag['name']));
+                ?>
+                <td><code>id="tagID-<?= $this->text->e($tag['id']) ?>"</code></td>
+                <td><code>#tagID-<?= $this->text->e($tag['id']) ?></code></td>
+                <td><code>class="tag-<?php echo strtolower($trimmed); ?>"</code></td>
+                <td><code>.tag-<?php echo strtolower($trimmed); ?></code></td>
                 <td class="tag-actions">
                     <ul class="">
                         <li class="">
@@ -114,14 +122,6 @@
                         </li>
                     </ul>
                 </td>
-                <td class=""><?= $this->text->e($tag['id']) ?></td>
-                <?php
-                $trimmed = str_replace(array(' ', '|'), '-', $this->text->e($tag['name']));
-                ?>
-                <td><code>class="tag-<?php echo strtolower($trimmed); ?>"</code></td>
-                <td><code>.tag-<?php echo strtolower($trimmed); ?></code></td>
-                <td><code>id="tagID-<?= $this->text->e($tag['id']) ?>"</code></td>
-                <td><code>#tagID-<?= $this->text->e($tag['id']) ?></code></td>
             </tr>
         <?php endforeach ?>
         </table>
