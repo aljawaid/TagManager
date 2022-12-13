@@ -71,9 +71,9 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 }
 
 .tag-bar {
-    margin: auto;
-    display: block;
-    width: 97%;
+    margin: auto 10px;
+    display: inline;
+    /*width: 97%;*/
     text-align: center;
     vertical-align: top;
 }
@@ -252,6 +252,7 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 
 .project-tags-table tr td {
     vertical-align: middle;
+    padding: 4px 5px;
 }
 
 .project-tags-table tr td ul {}
@@ -271,7 +272,7 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 
 .tag-actions {
     padding: 0 5px;
-    width: 275px;
+    width: 285px;
     text-align: center;
 }
 
