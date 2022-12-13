@@ -255,6 +255,20 @@ a:hover { color: var(--pp-red-alt-2) !important; }
     padding: 4px 5px;
 }
 
+.project-tags-table tr td code {
+    font-weight: 700;
+    border-radius: var(--border-radius);
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    padding: 0.1em 0.3em !important;
+    font-size: 0.885rem !important;
+    color: var(--pp-grey) !important;
+    background-color: rgba(27, 31, 35, 0.22) !important;
+    word-wrap: inherit;
+    letter-spacing: 0.08rem;
+    margin: 0 !important;
+    display: inline;
+}
+
 .project-tags-table tr td ul {}
 
 .project-tags-table tr td ul li {
