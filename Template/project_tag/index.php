@@ -73,7 +73,7 @@
             </svg>
             <h3 class=""><?= t('Project Tags') ?></h3>
         </summary>
-        <p class="tag-title-text"><?= t('The tags in this list are specific to this project') ?></p>
+        <p class="tag-title-text"><?= t('The tags in this list are specific to this project. Use the CSS selectors for further styling.') ?></p>
         <table id="" class="project-tags-table table-striped table-scrolling">
             <tr class="">
                 <th class=""><?= t('Tag') ?></th>
