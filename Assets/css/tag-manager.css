@@ -248,9 +248,35 @@ a:hover { color: var(--pp-red-alt-2) !important; }
   color: var(--pp-white);
 }
 
-.project-tags-table {}
+.project-tags-table {
+    border-collapse: unset;
+}
 
-.project-tags-table th {}
+.project-tags-table .t-corner-left {
+    border-top-left-radius: var(--border-radius);
+}
+
+.project-tags-table .t-corner-right {
+    border-top-right-radius: var(--border-radius);
+}
+
+.project-tags-table .project-tag-list-item:last-child {
+    border-bottom-left-radius: var(--border-radius);
+}
+
+.project-tag-list-item {}
+
+.project-tag-list-item:last-child {
+    border-bottom-left-radius: var(--border-radius);
+}
+
+.project-tags-table .tag-actions:last-child {
+    border-bottom-right-radius: var(--border-radius);
+}
+
+.project-tags-table th {
+    padding: .5em 3px !important;
+}
 
 .project-tags-table tr td {
     vertical-align: middle;
