@@ -269,6 +269,12 @@ a:hover { color: var(--pp-red-alt-2) !important; }
     letter-spacing: 0.08rem;
     margin: 0 !important;
     display: inline;
+code.css-id:first-of-type {
+    margin-bottom: 5px !important;
+}
+
+code.css-class:first-of-type {
+    margin-bottom: 5px !important;
 }
 
 .project-tags-table tr td ul {}
