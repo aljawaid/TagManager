@@ -75,17 +75,20 @@
         </summary>
         <p class="tag-title-text"><?= t('The tags in this list are specific to this project. Use the CSS selectors for further styling.') ?></p>
         <table id="" class="project-tags-table table-striped table-scrolling">
-            <tr class="">
-                <th class=""><?= t('Tag') ?></th>
-                <th class=""><?= t('Colour') ?></th>
-                <th class=""><?= t('Tag ID') ?></th>
-                <th class="" colspan="2"><?= t('CSS ID') ?></th>
-                <th class="" colspan="2"><?= t('CSS Class') ?></th>
-                <th class=""><?= t('Actions') ?></th>
-            </tr>
-        <?php foreach ($tags as $tag): ?>
-            <tr class="">
-                <td class="project-tag-list-item">
+            <thead>
+                <tr class="">
+                    <th class="t-corner-left" colspan=""><?= t('Tag') ?></th>
+                    <th class="text-center" colspan=""><?= t('Colour') ?></th>
+                    <th class="text-center" colspan=""><?= t('Tag ID') ?></th>
+                    <th class="" colspan=""><?= t('HTML/CSS ID') ?></th>
+                    <th class="" colspan=""><?= t('HTML/CSS Class') ?></th>
+                    <th class="t-corner-right text-center" colspan=""><?= t('Actions') ?></th>
+                </tr>
+            </thead>
+            <tbody>
+            <?php foreach ($tags as $tag): ?>
+                <tr class="">
+                    <td class="project-tag-list-item" rowspan="" colspan="">
                     <svg width="22px" height="22px" class="project-tag-check-filled" version="1.1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill='CurrentColor'>
                         <g fill="none" fill-rule="evenodd" id="" stroke="none" stroke-width="1">
                             <g fill="none" id="">
@@ -97,18 +100,22 @@
                         </g>
                     </svg>
                     <?= $this->text->e($tag['name']) ?>
-                </td>
-                <td class=""><?= $this->text->e($colors[$tag['color_id']] ?? '') ?></td>
-                <td class=""><?= $this->text->e($tag['id']) ?></td>
-                <?php
-                $trimmed = str_replace(array(' ', '|'), '-', $this->text->e($tag['name']));
-                ?>
-                <td><code>id="tagID-<?= $this->text->e($tag['id']) ?>"</code></td>
-                <td><code>#tagID-<?= $this->text->e($tag['id']) ?></code></td>
-                <td><code>class="tag-<?php echo strtolower($trimmed); ?>"</code></td>
-                <td><code>.tag-<?php echo strtolower($trimmed); ?></code></td>
-                <td class="tag-actions">
-                    <ul class="">
+                    </td>
+                    <td class="text-center" rowspan="" colspan=""><?= $this->text->e($colors[$tag['color_id']] ?? '') ?></td>
+                    <td class="text-center" rowspan="" colspan=""><?= $this->text->e($tag['id']) ?></td>
+                    <?php
+                    $trimmed = str_replace(array(' ', '|'), '-', $this->text->e($tag['name']));
+                    ?>
+                    <td rowspan="" colspan="">
+                        <code class="css-id" title="<?= t('HTML') ?>">id="tagID-<?= $this->text->e($tag['id']) ?>"</code>
+                        <code class="css-id" title="<?= t('CSS') ?>">#tagID-<?= $this->text->e($tag['id']) ?></code>
+                    </td>
+                    <td rowspan="" colspan="">
+                        <code class="css-class" title="<?= t('HTML') ?>">class="tag-<?php echo strtolower($trimmed); ?>"</code>
+                        <code class="css-class" title="<?= t('CSS') ?>">.tag-<?php echo strtolower($trimmed); ?></code>
+                    </td>
+                    <td class="tag-actions" rowspan="" colspan="">
+                        <ul class="">
                         <li class="">
                             <?= $this->modal->medium('project-edit-tag', t('Edit'), 'ProjectTagController', 'edit', array('tag_id' => $tag['id'], 'project_id' => $project['id'])) ?>
                         </li>
@@ -120,10 +127,11 @@
                         <li class="">
                             <?= $this->modal->confirm('project-delete-tag', t('Delete'), 'ProjectTagController', 'confirm', array('tag_id' => $tag['id'], 'project_id' => $project['id'])) ?>
                         </li>
-                    </ul>
-                </td>
-            </tr>
-        <?php endforeach ?>
+                        </ul>
+                    </td>
+                </tr>
+            <?php endforeach ?>
+            </tbody>
         </table>
     </details>
 <?php endif ?>
