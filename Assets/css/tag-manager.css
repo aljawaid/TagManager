@@ -294,7 +294,11 @@ a:hover { color: var(--pp-red-alt-2) !important; }
     word-wrap: inherit;
     letter-spacing: 0.08rem;
     margin: 0 !important;
-    display: inline;
+    /*display: inline;*/
+    display: block;
+    width: fit-content;
+}
+
 code.css-id:first-of-type {
     margin-bottom: 5px !important;
 }
