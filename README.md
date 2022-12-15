@@ -20,9 +20,9 @@ Features
 Screenshots
 ----------
 
-**title**  
+**Project Settings - Tags**  
 
-![Screenshot Name](../master/screenshot-name.png "Read Screenshot Name")
+![Screenshot Name](../master/Screenshots/screenshot-project-settings-tags-section.png "Project Tags Section")
 
 
 Usage
