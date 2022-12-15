@@ -153,11 +153,14 @@
     <p class="alert"><?= t('There are no global tags at the moment.') ?></p>
 
 <?php else: ?>
-    <table id="" class="table-striped table-scrolling">
-        <tr class="">
-            <th class=""><?= t('Tag') ?></th>
-            <th class=""><?= t('Colour') ?></th>
-        </tr>
+    <table id="" class="project-tags-table table-striped table-scrolling">
+        <thead>
+            <tr class="">
+                <th class="t-corner-left"><?= t('Tag') ?></th>
+                <th class="t-corner-right"><?= t('Colour') ?></th>
+            </tr>
+        </thead>
+        <tbody>
         <?php foreach ($gTags as $gTag): ?>
             <tr class="">
                 <td class="">
@@ -166,5 +169,6 @@
                 <td class=""><?= $this->text->e($colors[$gTag['color_id']] ?? '') ?></td>
             </tr>
         <?php endforeach ?>
+        </tbody>
     </table>
 <?php endif ?>
