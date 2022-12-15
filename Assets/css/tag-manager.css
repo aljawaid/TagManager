@@ -270,7 +270,11 @@ a:hover { color: var(--pp-red-alt-2) !important; }
     border-bottom-left-radius: var(--border-radius);
 }
 
-.project-tags-table .tag-actions:last-child {
+table.project-tags-table > tbody > tr:last-child > td:first-child {
+    border-bottom-left-radius: var(--border-radius);
+}
+
+table.project-tags-table > tbody > tr:last-child > td:last-child {
     border-bottom-right-radius: var(--border-radius);
 }
 
