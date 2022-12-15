@@ -156,7 +156,8 @@
         <thead>
             <tr class="">
                 <th class="t-corner-left"><?= t('Tag') ?></th>
-                <th class="t-corner-right"><?= t('Colour') ?></th>
+                <th class=""><?= t('Colour') ?></th>
+                <th class="t-corner-right text-center" colspan=""><?= t('Tag ID') ?></th>
             </tr>
         </thead>
         <tbody>
@@ -166,6 +167,7 @@
                     <?= $this->text->e($gTag['name']) ?>
                 </td>
                 <td class=""><?= $this->text->e($colors[$gTag['color_id']] ?? '') ?></td>
+                <td class="text-center" rowspan="" colspan=""><?= $this->text->e($gTag['id']) ?></td>
             </tr>
         <?php endforeach ?>
         </tbody>
