@@ -275,7 +275,7 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 }
 
 .project-tags-table th {
-    padding: .5em 3px !important;
+    padding: .4em 8px !important
 }
 
 .project-tags-table tr td {
