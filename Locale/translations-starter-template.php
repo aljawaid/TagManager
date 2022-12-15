@@ -3,7 +3,7 @@ return array(
   //
   // GENERAL
   //
-  '' => '',
+  'Simplify tags' => '',
   '' => '',
   '' => '',
   '' => '',
