@@ -146,7 +146,7 @@
                 </g>
             </svg>
             <h3 class=""><?= t('Global Tags') ?></h3></summary>
-        <p class="tag-title-text"><?= t('The tags in this list are global and available for any project') ?></p>
+        <p class="tag-title-text"><?= t('The tags in this list are global and available for any project. Use the CSS selectors for further styling. These tags are not included in your project tag count.') ?></p>
 
 <?php if (empty($gTags)): ?>
     <p class="alert"><?= t('There are no global tags at the moment.') ?></p>
@@ -156,7 +156,7 @@
         <thead>
             <tr class="">
                 <th class="t-corner-left"><?= t('Tag') ?></th>
-                <th class=""><?= t('Colour') ?></th>
+                <th class="text-center"><?= t('Colour') ?></th>
                 <th class="text-center" colspan=""><?= t('Tag ID') ?></th>
                 <th class="" colspan=""><?= t('HTML/CSS ID') ?></th>
                 <th class="t-corner-right" colspan=""><?= t('HTML/CSS Class') ?></th>
@@ -188,7 +188,7 @@
                     </svg>
                     <?= $this->text->e($gTag['name']) ?>
                 </td>
-                <td class=""><?= $this->text->e($colors[$gTag['color_id']] ?? '') ?></td>
+                <td class="text-center"><?= $this->text->e($colors[$gTag['color_id']] ?? '') ?></td>
                 <td class="text-center" rowspan="" colspan=""><?= $this->text->e($gTag['id']) ?></td>
                 <?php
                 $trimmedGlobal = str_replace(array(' ', '|'), '-', $this->text->e($gTag['name']));

@@ -8,10 +8,13 @@
 Features
 -------------
 
-- Show global tags with project tags
-- Show tag counts
+- Use better svg icons to identifiy between project and global tags
+- Show global tags with project tags in the Project Settings
+- Add direct link to project tags in the project dropdown menu with tag count
+- Show tag counts on the Project Settings page
+- Show HTML/CSS ID and Classes for each tag for further custom styling
+- Show project tags in a seperate section above the task description
 - Add Tag Filter to Project Board
-- Add tags entry as project menu item with count
 
 
 Screenshots
