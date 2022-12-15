@@ -157,7 +157,9 @@
             <tr class="">
                 <th class="t-corner-left"><?= t('Tag') ?></th>
                 <th class=""><?= t('Colour') ?></th>
-                <th class="t-corner-right text-center" colspan=""><?= t('Tag ID') ?></th>
+                <th class="text-center" colspan=""><?= t('Tag ID') ?></th>
+                <th class="" colspan=""><?= t('HTML/CSS ID') ?></th>
+                <th class="t-corner-right" colspan=""><?= t('HTML/CSS Class') ?></th>
             </tr>
         </thead>
         <tbody>
@@ -188,6 +190,17 @@
                 </td>
                 <td class=""><?= $this->text->e($colors[$gTag['color_id']] ?? '') ?></td>
                 <td class="text-center" rowspan="" colspan=""><?= $this->text->e($gTag['id']) ?></td>
+                <?php
+                $trimmedGlobal = str_replace(array(' ', '|'), '-', $this->text->e($gTag['name']));
+                ?>
+                <td rowspan="" colspan="">
+                    <code class="css-id" title="<?= t('HTML') ?>">id="tagID-<?= $this->text->e($gTag['id']) ?>"</code>
+                    <code class="css-id" title="<?= t('CSS') ?>">#tagID-<?= $this->text->e($gTag['id']) ?></code>
+                </td>
+                <td rowspan="" colspan="">
+                    <code class="css-class" title="<?= t('HTML') ?>">class="tag-<?php echo strtolower($trimmedGlobal); ?>"</code>
+                    <code class="css-class" title="<?= t('CSS') ?>">.tag-<?php echo strtolower($trimmedGlobal); ?></code>
+                </td>
             </tr>
         <?php endforeach ?>
         </tbody>
