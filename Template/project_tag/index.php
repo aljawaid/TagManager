@@ -22,7 +22,7 @@
             <h3 class=""><?= t('Project') ?></h3>
             <ul class="no-bullet">
                 <?php if (!empty($tags)): ?>
-                    <li class=""><?= $tagsCount ?> <?= t('Tags apply to this project') ?></li>
+                    <li class=""><span class="count-badge-p"><?= $tagsCount ?></span> <i><?= t('Tags') ?></i></li>
                 <?php endif ?>
                 <li class="">
                     <?= $this->modal->medium('plus-project-tag', t('Add Project Tag'), 'ProjectTagController', 'create', array('project_id' => $project['id'])) ?>
@@ -40,7 +40,7 @@
             <h3 class=""><?= t('Global') ?></h3>
             <ul class="no-bullet">
                 <?php if (!empty($gTags)): ?>
-                    <li class=""><?= $gTagsCount ?> <?= t('Global Tags Available') ?></li>
+                    <li class=""><span class="count-badge-g"><?= $gTagsCount ?></span> <i><?= t('Global Tags Available') ?></i></li>
                 <?php endif ?>
                 <?php if ($this->user->isAdmin()): ?>
                     <li class="">

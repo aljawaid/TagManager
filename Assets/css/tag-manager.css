@@ -360,3 +360,25 @@ code.css-class:first-of-type {
     font-size: 1.3rem;
     vertical-align: middle;
 }
+
+.count-badge-p {
+    font-weight: bold;
+    border: 1px solid var(--blue-icon-dark);
+    border-radius: var(--border-radius);
+    padding: 0 3px;
+    color: var(--pp-white);
+    background-color: var(--blue-border-gradient-match);
+}
+
+.count-badge-g {
+    font-weight: bold;
+    border: 1px solid var(--blue-icon-dark);
+    border-radius: var(--border-radius);
+    padding: 0 3px;
+    color: var(--pp-white);
+    background-color: var(--pp-green-dark);
+}
+
+.project-tags-bar > ul > li > i, .global-tags-bar > ul > li > i {
+    margin-right: 15px;
+}
