@@ -36,7 +36,10 @@ return array(
   // task/details.php
   //
   'Associated Tags' => '',
-  '' => '',
+  //
+  // project_header/dropdown.php
+  //
+  'Go to Global Tags' => '',
   '' => '',
   '' => '',
   '' => '',
