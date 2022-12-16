@@ -240,6 +240,12 @@ a:hover { color: var(--pp-red-alt-2) !important; }
     vertical-align: super;
 }
 
+.p-menu-global-link {
+    float: right;
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: .8em;
+}
 .dropdown-submenu-open li:not(.no-hover):hover .tag-menu-count {
     border-color: var(--pp-white);
 }

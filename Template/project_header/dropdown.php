@@ -11,5 +11,8 @@
     </g>
     </svg>
     <?= $this->url->link(t('Tags'), 'ProjectTagController', 'index', array('project_id' => $project['id'])) ?>
+    <span class="p-menu-global-link">
+        <?= $this->url->link(t('Manage Global Tags'), 'TagController', 'index', array(), false, '', t('Go to Global Tags')) ?>
+    </span>
     <span class="tag-menu-count"><?= $tagsCount ?></span>
 </li>
