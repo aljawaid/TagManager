@@ -45,9 +45,12 @@ return array(
   //
   'Tag Filters' => '',
   'No Tag' => '',
-  '' => '',
-  '' => '',
-  '' => '',
+  //
+  // tag/index.php
+  //
+  'Global Tags' => '',
+  'There is no global tag at the moment.' => '',
+  'The tags in this list are global and available for any project. Use the CSS selectors for further styling. These tags are also not included in any project tag counts.' => '',
   '' => '',
   '' => '',
   '' => '',
