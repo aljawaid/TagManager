@@ -145,8 +145,10 @@
                     </g>
                 </g>
             </svg>
-            <h3 class=""><?= t('Global Tags') ?></h3></summary>
-        <p class="tag-title-text"><?= t('The tags in this list are global and available for any project. Use the CSS selectors for further styling. These tags are not included in your project tag count.') ?></p>
+            <h3 class=""><?= t('Global Tags') ?></h3>
+        </summary>
+        <p class="tag-title-text"><?= t('The tags in this list are global and available for any project. Use the CSS selectors for further styling. These tags are not included in your project tag count.') ?>
+        </p>
 
 <?php if (empty($gTags)): ?>
     <p class="alert"><?= t('There are no global tags at the moment.') ?></p>
