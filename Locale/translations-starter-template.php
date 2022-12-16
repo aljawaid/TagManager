@@ -40,8 +40,11 @@ return array(
   // project_header/dropdown.php
   //
   'Go to Global Tags' => '',
-  '' => '',
-  '' => '',
+  //
+  // tagfilter.php
+  //
+  'Tag Filters' => '',
+  'No Tag' => '',
   '' => '',
   '' => '',
   '' => '',

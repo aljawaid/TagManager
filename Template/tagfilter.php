@@ -2,10 +2,10 @@
 </div>
 <div class="input-addon-item">
     <div class="dropdown">
-        <a href="#" class="dropdown-menu dropdown-menu-link-icon" title="<?= t('Tag filters') ?>"><i class="fa fa-tag fa-fw"></i><i class="fa fa-caret-down"></i></a>
+        <a href="#" class="dropdown-menu dropdown-menu-link-icon" title="<?= t('Tag Filters') ?>"><i class="fa fa-tag fa-fw"></i><i class="fa fa-caret-down"></i></a>
         <ul class="">
             <li class="">
-                <a href="#" class="filter-helper" data-unique-filter="tag:none"><?= t('No tag') ?></a>
+                <a href="#" class="filter-helper" data-unique-filter="tag:none"><?= t('No Tag') ?></a>
             </li>
             <?php foreach ($taglist as $tag): ?>
                 <li class="">
