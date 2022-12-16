@@ -382,3 +382,22 @@ code.css-class:first-of-type {
 .project-tags-bar > ul > li > i, .global-tags-bar > ul > li > i {
     margin-right: 15px;
 }
+
+.sub-header span {
+    position: absolute;
+    right: 0;
+    top: 7px;
+    padding: 0px 4px 4px 3px;
+    line-height: 20px;
+    background: var(--button-blue-gradient);
+    border: 1px solid var(--blue-border-gradient-match);
+    border-radius: var(--border-radius);
+}
+
+.sub-header span a {
+    color: var(--pp-white);
+}
+
+.sub-header {
+    position: relative;
+}
