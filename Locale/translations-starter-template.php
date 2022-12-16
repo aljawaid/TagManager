@@ -32,7 +32,10 @@ return array(
   'Global Tags' => '',
   'The tags in this list are global and available for any project. Use the CSS selectors for further styling. These tags are not included in your project tag count.' => '',
   'There are no global tags at the moment.' => '',
-  '' => '',
+  //
+  // task/details.php
+  //
+  'Associated Tags' => '',
   '' => '',
   '' => '',
   '' => '',

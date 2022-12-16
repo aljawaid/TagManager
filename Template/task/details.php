@@ -5,7 +5,7 @@ $tags = $this->task->taskTagModel->getTagsByTask($task['id']);
 <?php if (! empty($tags)): ?>
     <div id="TaskTagSummaryBar" class="task-tags">
         <ul class="">
-            <i class="fa fa-tags pp-grey" title="Tags">&nbsp;</i>
+            <i class="fa fa-tags pp-grey" title="<?= t('Associated Tags') ?>">&nbsp;</i>
             <?php foreach ($tags as $tag): ?>
                 <?php
                 $trimmed = str_replace(array(' ', '|'), '-', $this->text->e($tag['name']));
