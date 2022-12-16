@@ -47,10 +47,18 @@
                     </svg>
                     <?= $this->text->e($tag['name']) ?>
                 </td>
-                <td class="text-center task-tag <?= $tag['color_id'] ? "color-{$tag['color_id']}" : '' ?>"><?= $this->text->e($colors[$tag['color_id']] ?? '') ?></td>
+                <td class="text-center task-tag <?= $tag['color_id'] ? "color-{$tag['color_id']}" : '' ?>">
+                    <?= $this->text->e($colors[$tag['color_id']] ?? '') ?>
+                </td>
                 <td class="tag-actions">
-                    <?= $this->modal->medium('edit', t('Edit'), 'TagController', 'edit', array('tag_id' => $tag['id'])) ?>
-                    <?= $this->modal->confirm('trash-o', t('Delete'), 'TagController', 'confirm', array('tag_id' => $tag['id'])) ?>
+                    <ul class="">
+                        <li class="">
+                            <?= $this->modal->medium('global-edit-tag', t('Edit'), 'TagController', 'edit', array('tag_id' => $tag['id'])) ?>
+                        </li>
+                        <li class="">
+                            <?= $this->modal->confirm('global-delete-tag', t('Delete'), 'TagController', 'confirm', array('tag_id' => $tag['id'])) ?>
+                        </li>
+                    </ul>
                 </td>
             </tr>
         <?php endforeach ?>
