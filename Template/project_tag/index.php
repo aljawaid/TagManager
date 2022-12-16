@@ -116,17 +116,17 @@
                     </td>
                     <td class="tag-actions" rowspan="" colspan="">
                         <ul class="">
-                        <li class="">
-                            <?= $this->modal->medium('project-edit-tag', t('Edit'), 'ProjectTagController', 'edit', array('tag_id' => $tag['id'], 'project_id' => $project['id'])) ?>
-                        </li>
-                        <?php if ($this->user->isAdmin()): ?>
                             <li class="">
-                                <?= $this->modal->confirm('project-convert-tag', t('Convert'), 'ProjectTagController', 'confirmMakeGlobalTag', array('tag_id' => $tag['id'], 'project_id' => $project['id'])) ?>
+                                <?= $this->modal->medium('project-edit-tag', t('Edit'), 'ProjectTagController', 'edit', array('tag_id' => $tag['id'], 'project_id' => $project['id'])) ?>
                             </li>
-                        <?php endif ?>
-                        <li class="">
-                            <?= $this->modal->confirm('project-delete-tag', t('Delete'), 'ProjectTagController', 'confirm', array('tag_id' => $tag['id'], 'project_id' => $project['id'])) ?>
-                        </li>
+                            <?php if ($this->user->isAdmin()): ?>
+                                <li class="">
+                                    <?= $this->modal->confirm('project-convert-tag', t('Convert'), 'ProjectTagController', 'confirmMakeGlobalTag', array('tag_id' => $tag['id'], 'project_id' => $project['id'])) ?>
+                                </li>
+                            <?php endif ?>
+                            <li class="">
+                                <?= $this->modal->confirm('project-delete-tag', t('Delete'), 'ProjectTagController', 'confirm', array('tag_id' => $tag['id'], 'project_id' => $project['id'])) ?>
+                            </li>
                         </ul>
                     </td>
                 </tr>
