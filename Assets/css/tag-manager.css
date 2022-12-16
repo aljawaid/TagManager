@@ -235,9 +235,9 @@ a:hover { color: var(--pp-red-alt-2) !important; }
     margin-left: 5px;
     font-size: .8em;
     border: 1px solid var(--blue-border-gradient-match);
-    padding: 2px 4px;
+    padding: 0px 3px;
     border-radius: var(--border-radius);
-    float: right;
+    vertical-align: super;
 }
 
 .dropdown-submenu-open li:not(.no-hover):hover .tag-menu-count {
