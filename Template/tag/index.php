@@ -18,6 +18,7 @@
             <tr class="">
                 <th class="t-corner-left"><?= t('Tag') ?></th>
                 <th class="text-center"><?= t('Colour') ?></th>
+                <th class="text-center" colspan=""><?= t('Tag ID') ?></th>
                 <th class="t-corner-right text-center"><?= t('Actions') ?></th>
             </tr>
         </thead>
@@ -49,6 +50,9 @@
                 </td>
                 <td class="text-center task-tag <?= $tag['color_id'] ? "color-{$tag['color_id']}" : '' ?>">
                     <?= $this->text->e($colors[$tag['color_id']] ?? '') ?>
+                </td>
+                <td class="text-center" rowspan="" colspan="">
+                    <?= $this->text->e($tag['id']) ?>
                 </td>
                 <td class="tag-actions">
                     <ul class="">
