@@ -401,3 +401,11 @@ code.css-class:first-of-type {
 .sub-header {
     position: relative;
 }
+
+.project-tags-table .task-tag {
+    box-shadow: unset;
+}
+
+.project-tags-table [class*="color-"] {
+    border-color: initial;
+}

@@ -101,7 +101,7 @@
                     </svg>
                     <?= $this->text->e($tag['name']) ?>
                     </td>
-                    <td class="text-center" rowspan="" colspan=""><?= $this->text->e($colors[$tag['color_id']] ?? '') ?></td>
+                    <td class="text-center task-tag <?= $tag['color_id'] ? "color-{$tag['color_id']}" : '' ?>" rowspan="" colspan=""><?= $this->text->e($colors[$tag['color_id']] ?? '') ?></td>
                     <td class="text-center" rowspan="" colspan=""><?= $this->text->e($tag['id']) ?></td>
                     <?php
                     $trimmed = str_replace(array(' ', '|'), '-', $this->text->e($tag['name']));
@@ -191,7 +191,7 @@
                     </svg>
                     <?= $this->text->e($gTag['name']) ?>
                 </td>
-                <td class="text-center"><?= $this->text->e($colors[$gTag['color_id']] ?? '') ?></td>
+                <td class="text-center task-tag <?= $gTag['color_id'] ? "color-{$gTag['color_id']}" : '' ?>"><?= $this->text->e($colors[$gTag['color_id']] ?? '') ?></td>
                 <td class="text-center" rowspan="" colspan=""><?= $this->text->e($gTag['id']) ?></td>
                 <?php
                 $trimmedGlobal = str_replace(array(' ', '|'), '-', $this->text->e($gTag['name']));
