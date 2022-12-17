@@ -153,6 +153,11 @@ a:hover { color: var(--pp-red-alt-2) !important; }
     margin-bottom: 15px;
 }
 
+.g-tag-title-text {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: inline;
+}
 
 .g-tag-bar {
     vertical-align: middle;

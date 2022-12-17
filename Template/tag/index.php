@@ -17,12 +17,12 @@
         </ul>
     </div>
 
-<?php if (empty($tags)): ?>
-    <p class="alert"><?= t('There is no global tag at the moment.') ?></p>
-<?php else: ?>
-    <p class="tag-title-text">
-        <?= t('The tags in this list are global and available for any project. Use the CSS selectors for further styling. These tags are also not included in any project tag counts.') ?>
-    </p>
+    <?php if (empty($tags)): ?>
+        <p class="alert"><?= t('There is no global tag at the moment.') ?></p>
+    <?php else: ?>
+        <p class="g-tag-title-text">
+            <?= t('The tags in this list are global and available for any project. Use the CSS selectors for further styling. These tags are also not included in any project tag counts.') ?>
+        </p>
 </div>
     <table class="project-tags-table table-striped table-scrolling">
         <thead>
