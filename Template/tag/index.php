@@ -1,10 +1,8 @@
-<div class="page-header">
-    <h2><?= t('Global Tags') ?></h2>
-    <ul>
-        <li>
-            <?= $this->modal->medium('plus', t('Add Global Tag'), 'TagController', 'create') ?>
-        </li>
-    </ul>
+<div id="GlobalTags" class="tag-page-header">
+    <h2 class="">
+        <img src="/plugins/TagManager/Assets/icons/global-tag.svg" width="22px" height="22px" class="global-tags">
+        <?= t('Global Tags') ?>
+    </h2>
 </div>
 
 <?php if (empty($tags)): ?>
