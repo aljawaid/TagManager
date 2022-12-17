@@ -10,7 +10,8 @@ $tags = $this->task->taskTagModel->getTagsByTask($task['id']);
                 <?php
                 $trimmed = str_replace(array(' ', '|'), '-', $this->text->e($tag['name']));
                 ?>
-                <li id="tagID-<?= $this->text->e($tag['id']) ?>" class="tag-<?php echo strtolower($trimmed); ?>  task-tag <?= $tag['color_id'] ? "color-{$tag['color_id']}" : '' ?>"><?= $this->text->e($tag['name']) ?>
+                <li id="tagID-<?= $this->text->e($tag['id']) ?>" class="tag-<?php echo strtolower($trimmed); ?>  task-tag <?= $tag['color_id'] ? "color-{$tag['color_id']}" : '' ?>">
+                    <?= $this->text->e($tag['name']) ?>
                 </li>
             <?php endforeach ?>
        </ul>
