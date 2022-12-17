@@ -26,6 +26,10 @@ Features
 Screenshots
 ----------
 
+**Project Settings - Menu**  
+
+![Project Settings Menu](../master/Screenshots/screenshot-project-settings-menu.png "Project Settings Menu")
+
 **Project Settings - Tags**  
 
 ![Project Tags](../master/Screenshots/screenshot-project-settings-tags-section.png "Project Tags Section")
