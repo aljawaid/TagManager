@@ -30,6 +30,8 @@
                 <th class="t-corner-left"><?= t('Tag') ?></th>
                 <th class="text-center"><?= t('Colour') ?></th>
                 <th class="text-center" colspan=""><?= t('Tag ID') ?></th>
+                <th class="" colspan=""><?= t('HTML/CSS ID') ?></th>
+                <th class="" colspan=""><?= t('HTML/CSS Class') ?></th>
                 <th class="t-corner-right text-center"><?= t('Actions') ?></th>
             </tr>
         </thead>
@@ -64,6 +66,17 @@
                 </td>
                 <td class="text-center" rowspan="" colspan="">
                     <?= $this->text->e($tag['id']) ?>
+                </td>
+                <?php
+                $trimmed = str_replace(array(' ', '|'), '-', $this->text->e($tag['name']));
+                ?>
+                <td rowspan="" colspan="">
+                    <code class="css-id" title="<?= t('HTML') ?>">id="tagID-<?= $this->text->e($tag['id']) ?>"</code>
+                    <code class="css-id" title="<?= t('CSS') ?>">#tagID-<?= $this->text->e($tag['id']) ?></code>
+                </td>
+                <td rowspan="" colspan="">
+                    <code class="css-class" title="<?= t('HTML') ?>">class="tag-<?php echo strtolower($trimmed); ?>"</code>
+                    <code class="css-class" title="<?= t('CSS') ?>">.tag-<?php echo strtolower($trimmed); ?></code>
                 </td>
                 <td class="tag-actions">
                     <ul class="">
