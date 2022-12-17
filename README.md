@@ -10,11 +10,11 @@ Features
 
 - Use better svg icons to identifiy between project and global tags
 - Add Tag Filter to Project Board
-**Global Tags**
+#### Global Tags
 - Show HTML/CSS ID and Classes for each tag for further custom styling
 - Show tag counts
-- Show actual colours with values
-**Project Tags**
+- Show actual colours with values  
+#### Project Tags
 - Show tag counts
 - Add direct link to project tags in the project dropdown menu with tag count
 - Show global tags with project tags in the Project Settings
