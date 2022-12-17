@@ -46,6 +46,12 @@ Screenshots
 ![Global Tags](../master/Screenshots/screenshot-settings-global-tags.png "Global Tags Section")
 
 ---------
+**Board - Task Tag Filter**  
+
+![Board](../master/Screenshots/screenshot-task-tag-filter.png "Task Tag Filter")
+
+---------
+
 
 Usage
 -------------
