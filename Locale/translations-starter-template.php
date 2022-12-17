@@ -3,7 +3,7 @@ return array(
   //
   // GENERAL
   //
-  'Simplify tags' => '',
+  'Use tags like you have never used them before. This plugin revamps the whole project and global tags concept to provide the user with a clearer process of creating and associating tags to better improve their workflow.' => '',
   //
   // project_tag/index.php
   //
