@@ -4,6 +4,18 @@
         <?= t('Global Tags') ?>
     </h2>
 </div>
+<div class="g-tag-bar">
+    <div class="global-tags-bar">
+        <h3 class=""><?= t('Available Global Tags') ?></h3>
+        <ul class="no-bullet">
+            <?php if (!empty($tags)): ?>
+                <li class="mr-15"><span class="count-badge-g"><?= count($tags) ?></span></li>
+            <?php endif ?>
+            <li class="">
+                <?= $this->modal->medium('plus-global-tag', t('Add Global Tag'), 'TagController', 'create') ?>
+            </li>
+        </ul>
+    </div>
 
 <?php if (empty($tags)): ?>
     <p class="alert"><?= t('There is no global tag at the moment.') ?></p>
@@ -11,6 +23,7 @@
     <p class="tag-title-text">
         <?= t('The tags in this list are global and available for any project. Use the CSS selectors for further styling. These tags are also not included in any project tag counts.') ?>
     </p>
+</div>
     <table class="project-tags-table table-striped table-scrolling">
         <thead>
             <tr class="">

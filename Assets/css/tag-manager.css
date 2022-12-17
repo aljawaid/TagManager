@@ -153,6 +153,12 @@ a:hover { color: var(--pp-red-alt-2) !important; }
     margin-bottom: 15px;
 }
 
+
+.g-tag-bar {
+    vertical-align: middle;
+    margin-bottom: 15px;
+}
+
 .tag-section-title summary::marker {
     /*content: '\27A4';*/
     font-size: 1.4em;
