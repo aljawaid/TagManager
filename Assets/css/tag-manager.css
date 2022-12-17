@@ -398,7 +398,7 @@ code.css-class:first-of-type {
 
 .count-badge-g {
     font-weight: bold;
-    border: 1px solid var(--blue-icon-dark);
+    border: 1px solid var(--pp-green-dark);
     border-radius: var(--border-radius);
     padding: 0 3px;
     color: var(--pp-white);
