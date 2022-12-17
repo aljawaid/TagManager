@@ -414,6 +414,10 @@ code.css-class:first-of-type {
     margin-right: 15px;
 }
 
+.mr-15 {
+    margin-right: 15px;
+}
+
 .sub-header span {
     position: absolute;
     right: 0;
