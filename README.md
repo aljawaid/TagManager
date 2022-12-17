@@ -30,6 +30,10 @@ Screenshots
 
 ![Project Tags](../master/Screenshots/screenshot-project-settings-tags-section.png "Project Tags Section")
 
+**Project Settings - Tags - Expanded**  
+
+![Project Tags](../master/Screenshots/screenshot-project-settings-tags-section-expanded.png "Project Tags Section - Expanded")
+
 **Settings - Global Tags**  
 
 ![Global Tags](../master/Screenshots/screenshot-settings-global-tags.png "Global Tags Section")
