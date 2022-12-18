@@ -10,6 +10,4 @@ _(most recent changes are listed on top):_
 - Add Tag Filter feature from [Taglist](https://github.com/TimoStahl/kanboard_plugin_taglist) plugin @timostahl
 
 
-[**Full Changelog**](../master/changelog.md "See changes")
-
-[**README**](../master/README.md "View README")
+Read the full [**Changelog**](../master/changelog.md "See changes") or view the [**README**](../master/README.md "View README")
