@@ -25,6 +25,7 @@
     --panel-background: #EEEEEE;
     --tag-header-page-margin: 5px 10px 10px 15px;
     --tag-page-margin: 5px 10px 15px 5px;
+    --box-shadow-tag: 1px 1px 1px 0px #000;
 }
 
 .pp-blue { color: var(--pp-blue); fill: var(--pp-blue); }
@@ -443,4 +444,8 @@ code.css-class:first-of-type {
 
 .project-tags-table [class*="color-"] {
     border-color: initial;
+}
+
+li.task-tag {
+    box-shadow: var(--box-shadow-tag);
 }
