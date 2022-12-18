@@ -13,7 +13,7 @@
     --pp-green: #2EA02E;
     --pp-green-dark: #055D20;
     --pp-orange: #FF6500;
-    --border-radius: 3px;
+    --border-radius-tag: 3px;
     --button-blue-gradient: linear-gradient(to bottom, #7892c2 80%, #476e9e 100%);
     --blue-border-gradient-match: #476E9E;
     --header-page-margin: 5px 15px 10px 15px;
@@ -85,7 +85,7 @@ a:hover { color: var(--pp-red-alt-2) !important; }
     display: inline-block;
     border: 1px solid var(--blue-border-gradient-match);
     margin: 0px 10px 5px 10px;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-tag);
     height: 90px;
     padding: 0 10px;
     position: relative;
@@ -103,7 +103,7 @@ a:hover { color: var(--pp-red-alt-2) !important; }
     display: inline-block;
     border: 1px solid var(--blue-border-gradient-match);
     margin: 0px 10px 5px 10px;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-tag);
     height: 90px;
     padding: 0 10px;
     vertical-align: inherit;
@@ -124,7 +124,7 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 .global-tag-settings-form {
     display: inline !important;
     padding: 8px;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-tag);
     border: 1px solid var(--blue-border-gradient-match);
     overflow: auto;
     margin-left: 10px !important;
@@ -261,7 +261,7 @@ a:hover { color: var(--pp-red-alt-2) !important; }
     font-size: .8em;
     border: 1px solid var(--blue-border-gradient-match);
     padding: 0px 3px;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-tag);
     vertical-align: super;
 }
 
@@ -284,29 +284,29 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 }
 
 .project-tags-table .t-corner-left {
-    border-top-left-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius-tag);
 }
 
 .project-tags-table .t-corner-right {
-    border-top-right-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius-tag);
 }
 
 .project-tags-table .project-tag-list-item:last-child {
-    border-bottom-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius-tag);
 }
 
 .project-tag-list-item {}
 
 .project-tag-list-item:last-child {
-    border-bottom-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius-tag);
 }
 
 table.project-tags-table > tbody > tr:last-child > td:first-child {
-    border-bottom-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius-tag);
 }
 
 table.project-tags-table > tbody > tr:last-child > td:last-child {
-    border-bottom-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius-tag);
 }
 
 .project-tags-table th {
@@ -320,7 +320,7 @@ table.project-tags-table > tbody > tr:last-child > td:last-child {
 
 .project-tags-table tr td code {
     font-weight: 700;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-tag);
     font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
     padding: 0.1em 0.3em !important;
     font-size: 0.885rem !important;
@@ -369,7 +369,7 @@ code.css-class:first-of-type {
     border: 1px solid var(--blue-border-gradient-match);
     text-decoration: none !important;
     padding: 2px 5px 2px 3px;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-tag);
 }
 
 .task-summary-container .task-tags {
@@ -379,7 +379,7 @@ code.css-class:first-of-type {
 #TaskTagSummaryBar {
     background-color: rgba(255, 255, 255, .9);
     padding: .1em .4rem .3rem .4rem;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-tag);
     margin-top: 1em;
 }
 
@@ -395,7 +395,7 @@ code.css-class:first-of-type {
 .count-badge-p {
     font-weight: bold;
     border: 1px solid var(--blue-icon-dark);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-tag);
     padding: 0 3px;
     color: var(--pp-white);
     background-color: var(--blue-border-gradient-match);
@@ -404,7 +404,7 @@ code.css-class:first-of-type {
 .count-badge-g {
     font-weight: bold;
     border: 1px solid var(--pp-green-dark);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-tag);
     padding: 0 3px;
     color: var(--pp-white);
     background-color: var(--pp-green-dark);
@@ -426,7 +426,7 @@ code.css-class:first-of-type {
     line-height: 20px;
     background: var(--button-blue-gradient);
     border: 1px solid var(--blue-border-gradient-match);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-tag);
 }
 
 .sub-header span a {
