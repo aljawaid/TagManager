@@ -13,19 +13,19 @@
     --pp-green: #2EA02E;
     --pp-green-dark: #055D20;
     --pp-orange: #FF6500;
-    --border-radius-tag: 3px;
+    --blue-icon-dark: #034CA6;
     --button-blue-gradient: linear-gradient(to bottom, #7892c2 80%, #476e9e 100%);
     --blue-border-gradient-match: #476E9E;
-    --header-page-margin: 5px 15px 10px 15px;
-    --page-margin: 0px 15px 0px 15px;
-    --title-margin: 0px 15px 0px 15px;
-    --button-background-delete: #D05C84;
     --link-color-primary: #36C;
-    --blue-icon-dark: #034CA6;
-    --panel-background: #EEEEEE;
-    --tag-header-page-margin: 5px 10px 10px 15px;
-    --tag-page-margin: 5px 10px 15px 5px;
-    --box-shadow-tag: 1px 1px 1px 0px #000;
+    --button-background-delete: #D05C84;
+    --header-page-margin-tag-manager: 5px 15px 10px 15px;
+    --page-margin-tag-manager: 0px 15px 0px 15px;
+    --title-margin-tag-manager: 0px 15px 0px 15px;
+    --border-radius-tag-manager: 3px;
+    --panel-background-tag-manager: #EEEEEE;
+    --header-page-margin-tag-manager: 5px 10px 10px 15px;
+    --page-margin-tag-manager: 5px 10px 15px 5px;
+    --box-shadow-tag-manager: 1px 1px 1px 0px #000;
 }
 
 .pp-blue { color: var(--pp-blue); fill: var(--pp-blue); }
@@ -56,7 +56,7 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 .relative { position: relative; }
 
 #main .tag-page-header {
-    margin: var(--tag-header-page-margin);
+    margin: var(--header-page-margin-tag-manager);
     font-size: small;
     padding: 0px 0px 5px 2px !important;
     background-color: white !important;
@@ -86,7 +86,7 @@ a:hover { color: var(--pp-red-alt-2) !important; }
     display: inline-block;
     border: 1px solid var(--blue-border-gradient-match);
     margin: 0px 10px 5px 10px;
-    border-radius: var(--border-radius-tag);
+    border-radius: var(--border-radius-tag-manager);
     height: 90px;
     padding: 0 10px;
     position: relative;
@@ -104,7 +104,7 @@ a:hover { color: var(--pp-red-alt-2) !important; }
     display: inline-block;
     border: 1px solid var(--blue-border-gradient-match);
     margin: 0px 10px 5px 10px;
-    border-radius: var(--border-radius-tag);
+    border-radius: var(--border-radius-tag-manager);
     height: 90px;
     padding: 0 10px;
     vertical-align: inherit;
@@ -125,7 +125,7 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 .global-tag-settings-form {
     display: inline !important;
     padding: 8px;
-    border-radius: var(--border-radius-tag);
+    border-radius: var(--border-radius-tag-manager);
     border: 1px solid var(--blue-border-gradient-match);
     overflow: auto;
     margin-left: 10px !important;
@@ -133,7 +133,7 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 }
 
 .tag-section-title {
-    margin: var(--tag-page-margin);
+    margin: var(--page-margin-tag-manager);
 }
 
 .tag-section-title .sub-header {
@@ -262,7 +262,7 @@ a:hover { color: var(--pp-red-alt-2) !important; }
     font-size: .8em;
     border: 1px solid var(--blue-border-gradient-match);
     padding: 0px 3px;
-    border-radius: var(--border-radius-tag);
+    border-radius: var(--border-radius-tag-manager);
     vertical-align: super;
 }
 
@@ -285,29 +285,29 @@ a:hover { color: var(--pp-red-alt-2) !important; }
 }
 
 .project-tags-table .t-corner-left {
-    border-top-left-radius: var(--border-radius-tag);
+    border-top-left-radius: var(--border-radius-tag-manager);
 }
 
 .project-tags-table .t-corner-right {
-    border-top-right-radius: var(--border-radius-tag);
+    border-top-right-radius: var(--border-radius-tag-manager);
 }
 
 .project-tags-table .project-tag-list-item:last-child {
-    border-bottom-left-radius: var(--border-radius-tag);
+    border-bottom-left-radius: var(--border-radius-tag-manager);
 }
 
 .project-tag-list-item {}
 
 .project-tag-list-item:last-child {
-    border-bottom-left-radius: var(--border-radius-tag);
+    border-bottom-left-radius: var(--border-radius-tag-manager);
 }
 
 table.project-tags-table > tbody > tr:last-child > td:first-child {
-    border-bottom-left-radius: var(--border-radius-tag);
+    border-bottom-left-radius: var(--border-radius-tag-manager);
 }
 
 table.project-tags-table > tbody > tr:last-child > td:last-child {
-    border-bottom-right-radius: var(--border-radius-tag);
+    border-bottom-right-radius: var(--border-radius-tag-manager);
 }
 
 .project-tags-table th {
@@ -321,7 +321,7 @@ table.project-tags-table > tbody > tr:last-child > td:last-child {
 
 .project-tags-table tr td code {
     font-weight: 700;
-    border-radius: var(--border-radius-tag);
+    border-radius: var(--border-radius-tag-manager);
     font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
     padding: 0.1em 0.3em !important;
     font-size: 0.885rem !important;
@@ -370,7 +370,7 @@ code.css-class:first-of-type {
     border: 1px solid var(--blue-border-gradient-match);
     text-decoration: none !important;
     padding: 2px 5px 2px 3px;
-    border-radius: var(--border-radius-tag);
+    border-radius: var(--border-radius-tag-manager);
 }
 
 .task-summary-container .task-tags {
@@ -380,7 +380,7 @@ code.css-class:first-of-type {
 #TaskTagSummaryBar {
     background-color: rgba(255, 255, 255, .9);
     padding: .1em .4rem .3rem .4rem;
-    border-radius: var(--border-radius-tag);
+    border-radius: var(--border-radius-tag-manager);
     margin-top: 1em;
 }
 
@@ -396,7 +396,7 @@ code.css-class:first-of-type {
 .count-badge-p {
     font-weight: bold;
     border: 1px solid var(--blue-icon-dark);
-    border-radius: var(--border-radius-tag);
+    border-radius: var(--border-radius-tag-manager);
     padding: 0 3px;
     color: var(--pp-white);
     background-color: var(--blue-border-gradient-match);
@@ -405,7 +405,7 @@ code.css-class:first-of-type {
 .count-badge-g {
     font-weight: bold;
     border: 1px solid var(--pp-green-dark);
-    border-radius: var(--border-radius-tag);
+    border-radius: var(--border-radius-tag-manager);
     padding: 0 3px;
     color: var(--pp-white);
     background-color: var(--pp-green-dark);
@@ -427,7 +427,7 @@ code.css-class:first-of-type {
     line-height: 20px;
     background: var(--button-blue-gradient);
     border: 1px solid var(--blue-border-gradient-match);
-    border-radius: var(--border-radius-tag);
+    border-radius: var(--border-radius-tag-manager);
 }
 
 .sub-header span a {
@@ -447,7 +447,7 @@ code.css-class:first-of-type {
 }
 
 li.task-tag {
-    box-shadow: var(--box-shadow-tag);
+    box-shadow: var(--box-shadow-tag-manager);
 }
 
 .task-tags li {
@@ -456,5 +456,5 @@ li.task-tag {
     padding: 1px 3px 1px 3px;
     color: var(--color-primary);
     border: 1px solid #333;
-    border-radius: var(--border-radius-tag);
+    border-radius: var(--border-radius-tag-manager);
 }
