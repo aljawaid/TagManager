@@ -10,6 +10,7 @@ Features
 
 - Use better svg icons to identifiy between project and global tags
 - Add Tag Filter to Project Board
+- Choose from a large selection of colors in the [ColorManager](https://github.com/aljawaid/ColorManager) created specifically for tags
 #### Global Tags
 - Show HTML/CSS ID and Classes for each tag for further custom styling
 - Show tag counts
@@ -74,6 +75,7 @@ Compatibility
 
 #### Other Plugins & Action Plugins
 - _No known issues_
+- Compatible with [ColorManager](https://github.com/aljawaid/ColorManager)
 #### Core Files & Templates
 - `02` Template overrides
 - _No database changes_
