@@ -62,7 +62,7 @@
     <p class="alert"><?= t('There is no specific tag for this project at the moment.') ?></p>
 
 <?php else: ?>
-    <details <?php if ($tagsCount < 10): ?> open="" <?php endif ?> class="tag-section-title">
+    <details open="" class="tag-section-title">
         <summary class="sub-header">
             <svg width="22px" height="22px" class="project-tags" version="1.1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill='CurrentColor'>
                 <g fill="none" fill-rule="evenodd" id="" stroke="none" stroke-width="1">
