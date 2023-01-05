@@ -131,6 +131,10 @@
     margin: var(--page-margin-tag-manager);
 }
 
+.tag-section-title:last-child {
+    margin-bottom: 40px;
+}
+
 .tag-section-title .sub-header {
     cursor: pointer;
 
@@ -277,6 +281,7 @@
 
 .project-tags-table {
     border-collapse: unset;
+    margin-bottom: 40px;
 }
 
 .project-tags-table .t-corner-left {
