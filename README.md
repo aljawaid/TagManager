@@ -75,8 +75,7 @@ Compatibility
 
 #### Other Plugins & Action Plugins
 - _No known issues_
-- Compatible with [ColorManager](https://github.com/aljawaid/ColorManager)
-- Compatible with [Glancer](https://github.com/aljawaid/Glancer)
+- Compatible with [ColorManager](https://github.com/aljawaid/ColorManager), [Glancer](https://github.com/aljawaid/Glancer)
 
 #### Core Files & Templates
 - `02` Template overrides
