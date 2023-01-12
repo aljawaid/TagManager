@@ -296,7 +296,7 @@
     border-bottom-left-radius: var(--border-radius-tag-manager);
 }
 
-.project-tag-list-item {}
+/*.project-tag-list-item {}*/
 
 .project-tag-list-item:last-child {
     border-bottom-left-radius: var(--border-radius-tag-manager);
@@ -343,7 +343,7 @@ code.css-class:first-of-type {
     margin-bottom: 5px !important;
 }
 
-.project-tags-table tr td ul {}
+/*.project-tags-table tr td ul {}*/
 
 .project-tags-table tr td ul li {
     list-style-type: none;
