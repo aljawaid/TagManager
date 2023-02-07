@@ -458,3 +458,7 @@ li.task-tag {
     border: 1px solid #333;
     border-radius: var(--border-radius-tag-manager);
 }
+
+.disabled-link {
+    cursor: context-menu;
+}
