@@ -462,3 +462,8 @@ li.task-tag {
 .disabled-link {
     cursor: context-menu;
 }
+
+.tag-manager-menu svg {
+    vertical-align: middle;
+    margin-right: 3px;
+}
