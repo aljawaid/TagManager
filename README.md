@@ -11,8 +11,8 @@ Features
 - Use better svg icons to identifiy between project and global tags
 - Add Tag Filter to Project Board
 - Choose from a large selection of colors in the [ColorManager](https://github.com/aljawaid/ColorManager) created specifically for tags
+- Show HTML/CSS ID and classes for each tag for further custom styling
 #### Global Tags
-- Show HTML/CSS ID and Classes for each tag for further custom styling
 - Show tag counts
 - Show actual colours with values  
 #### Project Tags
@@ -20,7 +20,6 @@ Features
 - Add direct link to project tags in the project dropdown menu with tag count
 - Show global tags with project tags in the Project Settings
 - Show project tags in a seperate section above the task description
-- Show HTML/CSS ID and Classes for each tag for further custom styling
 - Show actual colours with values
 
 
@@ -76,6 +75,7 @@ Compatibility
 #### Other Plugins & Action Plugins
 - _No known issues_
 - Compatible with [ColorManager](https://github.com/aljawaid/ColorManager), [Glancer](https://github.com/aljawaid/Glancer)
+- Replaces [KanboardColorfulTags](https://github.com/ThomasTJdev/KanboardColorfulTags)
 
 #### Core Files & Templates
 - `02` Template overrides
@@ -130,6 +130,7 @@ Authors & Contributors
 
 - [aljawaid](https://github.com/aljawaid) - Author
 - [Timo Stahl](https://github.com/TimoStahl/kanboard_plugin_taglist) - Tag Filter feature
+- [ThomasTJdev](https://github.com/ThomasTJdev/KanboardColorfulTags) - HTML/CSS Selectors feature
 - _Contributors welcome_
 
 
