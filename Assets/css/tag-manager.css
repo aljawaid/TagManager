@@ -53,7 +53,7 @@
 #main .tag-page-header {
     margin: var(--header-page-margin-tag-manager);
     font-size: small;
-    padding: 0px 0px 5px 2px !important;
+    padding: 0 0 5px 2px !important;
     background-color: white !important;
 }
 
@@ -80,7 +80,7 @@
     width: fit-content;
     display: inline-block;
     border: 1px solid var(--blue-border-gradient-match);
-    margin: 0px 10px 5px 10px;
+    margin: 0 10px 5px 10px;
     border-radius: var(--border-radius-tag-manager);
     height: 90px;
     padding: 0 10px;
@@ -98,7 +98,7 @@
     width: fit-content;
     display: inline-block;
     border: 1px solid var(--blue-border-gradient-match);
-    margin: 0px 10px 5px 10px;
+    margin: 0 10px 5px 10px;
     border-radius: var(--border-radius-tag-manager);
     height: 90px;
     padding: 0 10px;
@@ -195,7 +195,7 @@
 }
 
 .global-tag-settings-form form .js-submit-buttons-rendered .form-actions button {
-    padding: 0px 5px 2px 5px;
+    padding: 0 5px 2px 5px;
     margin-left: 5px;
 }
 
@@ -260,7 +260,7 @@
     margin-left: 5px;
     font-size: .8em;
     border: 1px solid var(--blue-border-gradient-match);
-    padding: 0px 3px;
+    padding: 0 3px;
     border-radius: var(--border-radius-tag-manager);
     vertical-align: super;
 }
@@ -423,7 +423,7 @@ code.css-class:first-of-type {
     position: absolute;
     right: 0;
     top: 7px;
-    padding: 0px 4px 4px 3px;
+    padding: 0 4px 4px 3px;
     line-height: 20px;
     background: var(--button-blue-gradient);
     border: 1px solid var(--blue-border-gradient-match);
