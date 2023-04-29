@@ -1,8 +1,10 @@
-# TagManager
+<h1 name="readme-top">TagManager</h1>
+
 ![GitHub All Releases](https://img.shields.io/github/downloads/aljawaid/TagManager/total?style=for-the-badge "GitHub All Downloads") - **_A plugin for [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software")_**
 
 Use tags like you have never used them before. This plugin revamps the whole project and global tags concept to provide the user with a clearer process of creating and associating tags to better improve their workflow.
 
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>]</p>
 
 ## Features
 
@@ -22,6 +24,7 @@ Use tags like you have never used them before. This plugin revamps the whole pro
 - Show project tags in a seperate section above the task description
 - Show actual colours with values
 
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## Screenshots
 
@@ -51,6 +54,7 @@ Use tags like you have never used them before. This plugin revamps the whole pro
 
 ---------
 
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## Usage
 
@@ -64,6 +68,7 @@ Go to `Settings` &#10562; `Global Tags`
 
 Go to `Project Board` &#10562; `Tag Filter`
 
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## Installation & Compatibility
 
@@ -95,6 +100,7 @@ Go to `Project Board` &#10562; `Tag Filter`
 
 </details>
 
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## Authors & Contributors
 
@@ -103,7 +109,11 @@ Go to `Project Board` &#10562; `Tag Filter`
 - [ThomasTJdev](https://github.com/ThomasTJdev/KanboardColorfulTags) - HTML/CSS Selectors feature
 - _Contributors welcome_
 
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## License
 
 - This project is distributed under the [MIT License](../master/LICENSE "Read The MIT license")
+
+<a name="readme-bottom"></a>
+<p align="right">[<a href="#readme-top">&#8593; Top</a>]</p>
