@@ -15,7 +15,7 @@
 
 Use tags like you have never used them before. This plugin revamps the whole project and global tags concept to provide the user with a clearer process of creating and associating tags to better improve their workflow.
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>]</p>
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## Features
 
@@ -35,7 +35,7 @@ Use tags like you have never used them before. This plugin revamps the whole pro
 - Show project tags in a seperate section above the task description
 - Show actual colours with values
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#usage">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## Screenshots
 
@@ -65,7 +65,7 @@ Use tags like you have never used them before. This plugin revamps the whole pro
 
 ---------
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#installation--compatibility">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## Usage
 
@@ -79,7 +79,7 @@ Go to `Settings` &#10562; `Global Tags`
 
 Go to `Project Board` &#10562; `Tag Filter`
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8592; Previous</a>] [<a href="#authors--contributors">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## Installation & Compatibility
 
@@ -111,7 +111,7 @@ Go to `Project Board` &#10562; `Tag Filter`
 
 </details>
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#usage">&#8592; Previous</a>] [<a href="#license">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## Authors & Contributors
 
@@ -120,7 +120,7 @@ Go to `Project Board` &#10562; `Tag Filter`
 - [ThomasTJdev](https://github.com/ThomasTJdev/KanboardColorfulTags) - HTML/CSS Selectors feature
 - _Contributors welcome_
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#installation--compatibility">&#8592; Previous</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## License
 
