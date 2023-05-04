@@ -1,4 +1,4 @@
-<h1 name="readme-top">TagManager</h1>
+<h1 name="user-content-readme-top">TagManager</h1>
 <p align="center">
     <a href="https://github.com/aljawaid/TagManager/releases">
         <img src="https://img.shields.io/github/v/release/aljawaid/TagManager?style=for-the-badge&color=brightgreen" alt="GitHub Latest Release (by date)" title="GitHub Latest Release (by date)">
@@ -33,7 +33,7 @@
 
 Use tags like you have never used them before. This plugin revamps the whole project and global tags concept to provide the user with a clearer process of creating and associating tags to better improve their workflow.
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Features
 
@@ -53,7 +53,7 @@ Use tags like you have never used them before. This plugin revamps the whole pro
 - Show project tags in a seperate section above the task description
 - Show actual colours with values
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#usage">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#usage">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Screenshots
 
@@ -83,7 +83,7 @@ Use tags like you have never used them before. This plugin revamps the whole pro
 
 ---------
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#installation--compatibility">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#installation--compatibility">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Usage
 
@@ -97,7 +97,7 @@ Go to `Settings` &#10562; `Global Tags`
 
 Go to `Project Board` &#10562; `Tag Filter`
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8592; Previous</a>] [<a href="#authors--contributors">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8592; Previous</a>] [<a href="#authors--contributors">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Installation & Compatibility
 
@@ -117,7 +117,7 @@ Go to `Project Board` &#10562; `Tag Filter`
   - Compatible with [ColorManager](https://github.com/aljawaid/ColorManager), [Glancer](https://github.com/aljawaid/Glancer)
   - Replaces [KanboardColorfulTags](https://github.com/ThomasTJdev/KanboardColorfulTags)
 - **Core Files & Templates**
-  - `02` Template override
+  - `02` Template overrides
   - _No database changes_
 
 </details>
@@ -129,7 +129,7 @@ Go to `Project Board` &#10562; `Tag Filter`
 
 </details>
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#usage">&#8592; Previous</a>] [<a href="#license">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#usage">&#8592; Previous</a>] [<a href="#license">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Authors & Contributors
 
@@ -138,7 +138,7 @@ Go to `Project Board` &#10562; `Tag Filter`
 - [ThomasTJdev](https://github.com/ThomasTJdev/KanboardColorfulTags) - HTML/CSS Selectors feature
 - _Contributors welcome_
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#installation--compatibility">&#8592; Previous</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#installation--compatibility">&#8592; Previous</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## License
 
@@ -146,7 +146,7 @@ Go to `Project Board` &#10562; `Tag Filter`
 
 ---
 
-<h3 align="center">
+<p align="center">
     <a href="https://github.com/aljawaid/TagManager/stargazers" title="View Stargazers">
         <img src="https://img.shields.io/github/stars/aljawaid/TagManager?logo=github&style=flat-square" alt="TagManager">
     </a>
@@ -168,6 +168,6 @@ Go to `Project Board` &#10562; `Tag Filter`
     <a href="https://github.com/aljawaid/TagManager/compare/" title="Latest Commits">
         <img alt="GitHub commits since latest release (by date)" src="https://img.shields.io/github/commits-since/aljawaid/TagManager/latest?style=flat-square">
     </a>
-</h3>
-<a name="readme-bottom"></a>
-<p align="right">[<a href="#readme-top">&#8593; Top</a>]</p>
+</p>
+<a name="user-content-readme-bottom"></a>
+<p align="right">[<a href="#user-content-readme-top">&#8593; Top</a>]</p>
