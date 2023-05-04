@@ -2,8 +2,6 @@
 
 ## v1.5
 
-### What's Changed
-
 _(most recent changes are listed on top):_
 - NEW: Show Tag Count in Project Menu to All Users - for Project Editors, show tag page - for Project Viewers, redirect to project overview page
 - FIX: Unix (LF) Line Endings and Tabs > Spaces
@@ -22,8 +20,6 @@ _(most recent changes are listed on top):_
 
 
 ## v1.0
-
-### What's Changed
 
 _(most recent changes are listed on top):_
 - Initial release
