@@ -2,7 +2,7 @@
 $tags = $this->task->taskTagModel->getTagsByTask($task['id']);
 ?>
 
-<?php if (! empty($tags)): ?>
+<?php if (!empty($tags)): ?>
     <div id="TaskTagSummaryBar" class="task-tags">
         <ul class="">
             <i class="fa fa-tags pp-grey" title="<?= t('Associated Tags') ?>">&nbsp;</i>
