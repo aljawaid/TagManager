@@ -14,18 +14,18 @@
     --pp-green-dark: #055D20;
     --pp-orange: #FF6500;
     --blue-icon-dark: #034CA6;
-    --button-blue-gradient: linear-gradient(to bottom, #7892c2 80%, #476e9e 100%);
+    --button-blue-gradient: linear-gradient(to bottom, #7892C2 80%, #476E9E 100%);
     --blue-border-gradient-match: #476E9E;
-    --link-color-primary: #36C;
+    --link-color-primary: #3366CC;
     --button-background-delete: #D05C84;
-    /*--header-page-margin-tag-manager: 5px 15px 10px 15px;*/
-    /*--page-margin-tag-manager: 0px 15px 0px 15px;*/
-    --title-margin-tag-manager: 0px 15px 0px 15px;
+    /* --header-page-margin-tag-manager: 5px 15px 10px 15px; */
+    /* --page-margin-tag-manager: 0px 15px 0px 15px; */
+    --title-margin-tag-manager: 0 15px 0 15px;
     --border-radius-tag-manager: 3px;
     --panel-background-tag-manager: #EEEEEE;
     --header-page-margin-tag-manager: 5px 10px 10px 15px;
     --page-margin-tag-manager: 5px 10px 15px 5px;
-    --box-shadow-tag-manager: 1px 1px 1px 0px #000;
+    --box-shadow-tag-manager: 1px 1px 1px 0 #000000;
     --transition-tag-manager: ease-in-out all .3s;
 }
 
@@ -42,7 +42,7 @@
 .pp-dark-green { color: var(--pp-green-dark); fill: var(--pp-green-dark); }
 .pp-orange { color: var(--pp-orange); fill: var(--pp-orange); }
 
-.display-none, .d-none { display: none !important;}
+.display-none, .d-none { display: none; }
 
 .font-weight-bold { font-weight: bold; }
 
@@ -63,13 +63,13 @@
     padding-bottom: 5px;
     font-size: 1.6em;
     margin-top: 0;
-    font-weight: 700;
+    font-weight: bold;
 }
 
 .tag-bar {
-    /*margin: auto 10px;*/
-    /*display: inline;*/
-    /*width: 97%;*/
+    /* margin: auto 10px; */
+    /* display: inline; */
+    /* width: 97%; */
     text-align: center;
     vertical-align: top;
     display: block;
@@ -139,6 +139,7 @@
     cursor: pointer;
 
 }
+
 .tag-page-header img, .sub-header img, .sub-header svg {
     vertical-align: text-bottom;
 }
@@ -165,25 +166,28 @@
 }
 
 .tag-section-title summary::marker {
-    /*content: '\27A4';*/
+    /* content: '\27A4'; */
     font-size: 1.4em;
 }
 
+/* stylelint-disable keyframes-name-pattern */
 .tag-section-title[open] p, .tag-section-title[open] table {
-    animation: animateDown 0.3s linear forwards;
+    animation: animateDown .3s linear forwards;
     margin-top: 10px;
 }
 
 @keyframes animateDown {
     0% {
         opacity: 0;
-        transform: translatey(-15px);
+        transform: translateY(-15px);
     }
     100% {
         opacity: 1;
-        transform: translatey(0);
+        transform: translateY(0);
     }
 }
+
+/* stylelint-enable keyframes-name-pattern */
 
 .global-tag-settings-form form, .global-tag-settings-form form label {
     display: inline-block;
@@ -271,6 +275,7 @@
     margin-left: 5px;
     font-size: .8em;
 }
+
 .dropdown-submenu-open li:not(.no-hover):hover .tag-menu-count {
     border-color: var(--pp-white);
 }
@@ -296,8 +301,6 @@
     border-bottom-left-radius: var(--border-radius-tag-manager);
 }
 
-/*.project-tag-list-item {}*/
-
 .project-tag-list-item:last-child {
     border-bottom-left-radius: var(--border-radius-tag-manager);
 }
@@ -320,15 +323,15 @@ table.project-tags-table > tbody > tr:last-child > td:last-child {
 }
 
 .project-tags-table tr td code {
-    font-weight: 700;
+    font-weight: bold;
     border-radius: var(--border-radius-tag-manager);
-    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-    padding: 0.1em 0.3em !important;
-    font-size: 0.885rem !important;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    padding: .1em .3em !important;
+    font-size: .885rem !important;
     color: var(--pp-grey) !important;
-    background-color: rgba(27, 31, 35, 0.22) !important;
+    background-color: rgba(27, 31, 35, .22) !important;
     word-wrap: inherit;
-    letter-spacing: 0.08rem;
+    letter-spacing: .08rem;
     margin: 0 !important;
     /*display: inline;*/
     display: block;
@@ -342,8 +345,6 @@ code.css-id:first-of-type {
 code.css-class:first-of-type {
     margin-bottom: 5px !important;
 }
-
-/*.project-tags-table tr td ul {}*/
 
 .project-tags-table tr td ul li {
     list-style-type: none;
@@ -455,7 +456,7 @@ li.task-tag {
     margin: 3px 3px 0 0;
     padding: 1px 3px 1px 3px;
     color: var(--color-primary);
-    border: 1px solid #333;
+    border: 1px solid #333333;
     border-radius: var(--border-radius-tag-manager);
 }
 
