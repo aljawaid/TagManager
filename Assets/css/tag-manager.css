@@ -18,8 +18,6 @@
     --blue-border-gradient-match: #476E9E;
     --link-color-primary: #3366CC;
     --button-background-delete: #D05C84;
-    /* --header-page-margin-tag-manager: 5px 15px 10px 15px; */
-    /* --page-margin-tag-manager: 0px 15px 0px 15px; */
     --title-margin-tag-manager: 0 15px 0 15px;
     --border-radius-tag-manager: 3px;
     --panel-background-tag-manager: #EEEEEE;
@@ -181,6 +179,7 @@
         opacity: 0;
         transform: translateY(-15px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -333,7 +332,6 @@ table.project-tags-table > tbody > tr:last-child > td:last-child {
     word-wrap: inherit;
     letter-spacing: .08rem;
     margin: 0 !important;
-    /*display: inline;*/
     display: block;
     width: fit-content;
 }
