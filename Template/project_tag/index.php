@@ -140,7 +140,9 @@
     </details>
 <?php endif ?>
 
+    <?php // phpcs:disable Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace,Squiz.WhiteSpace.ScopeClosingBrace.ContentBefore -- code must be kept intact ?>
     <details <?php if ($gTagsCount < 10): ?> open="" <?php endif ?> class="tag-section-title">
+        <?php // phpcs:enable ?>
         <summary class="sub-header">
             <span class=""><?= $this->url->link(t('Manage Global Tags'), 'TagController', 'index') ?></span>
             <svg width="24px" height="24px" class="global-tag-filled-icon" version="1.1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill='CurrentColor'>
