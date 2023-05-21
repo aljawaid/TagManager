@@ -16,7 +16,6 @@
             </li>
         </ul>
     </div>
-
     <?php if (empty($tags)): ?>
         <p class="alert"><?= t('There is no global tag at the moment.') ?></p>
     <?php else: ?>
@@ -92,4 +91,4 @@
         <?php endforeach ?>
         </tbody>
     </table>
-<?php endif ?>
+    <?php endif ?>
