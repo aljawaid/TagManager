@@ -1,5 +1,32 @@
 # Changelog
 
+
+## v1.6
+
+_(most recent changes are listed on top):_
+- FIX: CSS Code Syntax - remove useless code
+- FIX: Code Syntax - `details.php`
+- FIX: Code Syntax - `tag/index.php`
+- FIX: Code Syntax - `project_tag/index.php`
+- FIX: Code Syntax - `dropdown.php`
+- FIX: Code Syntax - `Plugin.php`
+- FIX: CSS Code Syntax
+- NEW: Add Code Scanning Badges to README.md
+- FIX: README Navigation Links for GitHub
+- FIX: Markdown Syntax
+- FIX: Code Syntax
+- NEW: Add Footer Badges to README.md
+- NEW: Add Section Navigation Links to README.md
+- NEW: Add Badges to README.md
+- NEW: Add README Page Navigation Links
+- FIX: Content Flow for README.md
+- Create INSTALL.md
+- FIX: CSS: No unit for zero needed
+- FIX: CSS: Do not use duplicate style definitions
+- Update README.md - mention [KanboardColorfulTags](https://github.com/ThomasTJdev/KanboardColorfulTags/issues/1)
+- FIX: Alignment in Project Dropdown Menu
+
+
 ## v1.5
 
 _(most recent changes are listed on top):_
