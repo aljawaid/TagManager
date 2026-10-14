@@ -328,8 +328,8 @@ table.project-tags-table > tbody > tr:last-child > td:last-child {
     padding: .1em .3em !important;
     font-size: .885rem !important;
     color: var(--pp-grey) !important;
-    background-color: rgba(27, 31, 35, .22) !important;
-    word-wrap: inherit;
+    background-color: rgb(27, 31, 35, .22) !important;
+    overflow-wrap: inherit;
     letter-spacing: .08rem;
     margin: 0 !important;
     display: block;
@@ -377,7 +377,7 @@ code.css-class:first-of-type {
 }
 
 #TaskTagSummaryBar {
-    background-color: rgba(255, 255, 255, .9);
+    background-color: rgb(255, 255, 255, .9);
     padding: .1em .4rem .3rem .4rem;
     border-radius: var(--border-radius-tag-manager);
     margin-top: 1em;
