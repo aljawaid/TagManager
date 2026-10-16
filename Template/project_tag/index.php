@@ -6,7 +6,7 @@
 
     <div id="ProjectTags" class="tag-page-header">
         <h2 class="">
-            <img src="/plugins/TagManager/Assets/icons/project-tags.svg" width="22px" height="22px" class="project-tags">
+            <img src="<?= $this->url->dir() ?>plugins/TagManager/Assets/icons/project-tags.svg" width="22" height="22" class="project-tags" alt="" aria-hidden="true">
             <?= t('Project Tags') ?>
         </h2>
     </div>

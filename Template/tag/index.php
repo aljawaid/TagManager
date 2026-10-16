@@ -1,6 +1,6 @@
 <div id="GlobalTags" class="tag-page-header">
     <h2 class="">
-        <img src="/plugins/TagManager/Assets/icons/global-tag.svg" width="22px" height="22px" class="global-tags">
+        <img src="<?= $this->url->dir() ?>plugins/TagManager/Assets/icons/global-tag.svg" width="22" height="22" class="global-tags" alt="" aria-hidden="true">
         <?= t('Global Tags') ?>
     </h2>
 </div>
