@@ -3,17 +3,27 @@
 namespace Kanboard\Plugin\TagManager;
 
 use Kanboard\Core\Plugin\Base;
+use Kanboard\Core\Security\Role;
 use Kanboard\Core\Translator;
 
 /**
- * Registers TagManager templates, assets and filter integration.
+ * Registers TagManager templates, assets, settings and filter integration.
  *
- * Related test file: tests/PluginIntegrationTest.php.
+ * Related test files: tests/PluginIntegrationTest.php and
+ * tests/SettingsIntegrationTest.php.
  */
 class Plugin extends Base
 {
+    public const DISPLAY_MODE_KEY = 'tag_manager_display_mode';
+    public const DISPLAY_MODE_COLORED = 'colored';
+    public const DISPLAY_MODE_TRANSPARENT = 'transparent';
+
     public function initialize()
     {
+        // Tag display settings affect every user and are restricted to administrators.
+        $this->applicationAccessMap->add('TagManagerController', '*', Role::APP_ADMIN);
+        $this->route->addRoute('/settings/tag-manager', 'TagManagerController', 'show', 'TagManager');
+
         // Register shared presentation logic before rendering plugin templates.
         $this->helper->register(
             'tagManager',
@@ -24,12 +34,19 @@ class Plugin extends Base
         $this->template->setTemplateOverride('project_tag/index', 'tagManager:project_tag/index');
         $this->template->setTemplateOverride('tag/index', 'tagManager:tag/index');
 
-        // Template hooks add navigation, task details and filters.
+        // Template hooks add navigation, task details, filters and administrator settings.
         $this->template->hook->attach('template:project:dropdown', 'tagManager:project_header/dropdown');
         $this->template->hook->attach('template:task:details:bottom', 'tagManager:task/details');
+        $this->template->hook->attach('template:config:sidebar', 'tagManager:config/sidebar');
 
-        // Load the plugin presentation as a static asset.
+        // Load the optional mode as a separate static asset to remain CSP-compatible.
         $this->hook->on('template:layout:css', array('template' => 'plugins/TagManager/Assets/css/tag-manager.css'));
+        if ($this->configModel->get(self::DISPLAY_MODE_KEY, self::DISPLAY_MODE_COLORED) === self::DISPLAY_MODE_TRANSPARENT) {
+            $this->hook->on(
+                'template:layout:css',
+                array('template' => 'plugins/TagManager/Assets/css/tag-manager-transparent.css')
+            );
+        }
 
         // Add a tag filter without trusting optional hook context or missing projects.
         $tagModel = $this->tagModel;

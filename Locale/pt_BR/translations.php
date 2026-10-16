@@ -56,4 +56,20 @@ return array(
     'Available Global Tags' => 'Tags Globais Disponíveis',
     'There is no global tag at the moment.' => 'No momento, não há nenhuma Tag Global',
     'The tags in this list are global and available for any project. Use the CSS selectors for further styling. These tags are also not included in any project tag counts.' => 'As Tags nesta lista são Globais e disponíveis para qualquer projeto. Utilize os seletores de CSS para maiores ajustes de estilo. Essas tags também não estão inclusas na contagem de Tag de seu Projeto',
+    //
+    // config/settings.php
+    //
+    'Back to Settings' => 'Voltar às Configurações',
+    'Choose how tags are displayed on task cards and task details for every user.' => 'Escolha como as tags serão exibidas nos cartões e detalhes das tarefas para todos os usuários.',
+    'Coloured tags' => 'Tags Coloridas',
+    'Keep the current filled tag colours.' => 'Mantenha as cores de preenchimento atuais das tags.',
+    'Remove tag fills while retaining the configured colour as a border, improving contrast on coloured task cards.' => 'Remova o preenchimento das tags e mantenha a cor configurada na borda para melhorar o contraste em cartões coloridos.',
+    'Save' => 'Salvar',
+    'Select one of the available options.' => 'Selecione uma das opções disponíveis.',
+    'Settings' => 'Configurações',
+    'Tag appearance' => 'Aparência das Tags',
+    'Tag appearance settings saved successfully.' => 'As configurações de aparência das tags foram salvas.',
+    'Tag style' => 'Estilo das Tags',
+    'Transparent tags' => 'Tags Transparentes',
+    'Unable to save tag appearance settings.' => 'Não foi possível salvar as configurações de aparência das tags.',
 );

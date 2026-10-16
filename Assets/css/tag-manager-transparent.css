@@ -1,0 +1,8 @@
+/* KANBOARD PLUGIN - CSS FILE */
+
+/* Optional global mode: keep each configured tag colour as a border without filling the pill. */
+.task-tags .task-tag[class*="color-"] {
+    background-color: transparent !important;
+    box-shadow: none;
+    color: inherit !important;
+}

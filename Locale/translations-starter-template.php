@@ -56,4 +56,20 @@ return array(
     'Available Global Tags' => '',
     'There is no global tag at the moment.' => '',
     'The tags in this list are global and available for any project. Use the CSS selectors for further styling. These tags are also not included in any project tag counts.' => '',
+    //
+    // config/settings.php
+    //
+    'Back to Settings' => '',
+    'Choose how tags are displayed on task cards and task details for every user.' => '',
+    'Coloured tags' => '',
+    'Keep the current filled tag colours.' => '',
+    'Remove tag fills while retaining the configured colour as a border, improving contrast on coloured task cards.' => '',
+    'Save' => '',
+    'Select one of the available options.' => '',
+    'Settings' => '',
+    'Tag appearance' => '',
+    'Tag appearance settings saved successfully.' => '',
+    'Tag style' => '',
+    'Transparent tags' => '',
+    'Unable to save tag appearance settings.' => '',
 );
