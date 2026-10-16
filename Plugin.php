@@ -87,7 +87,7 @@ class Plugin extends Base
 
     public function getPluginDescription()
     {
-        return t('Use tags like you have never used them before. This plugin revamps the whole project and global tags concept to provide the user with a clearer process of creating and associating tags to better improve their workflow.');
+        return t('Manage project and global tags with clearer navigation, filtering, styling references and accessible display options.');
     }
 
     public function getPluginAuthor()

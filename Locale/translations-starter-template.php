@@ -4,7 +4,7 @@ return array(
     //
     // GENERAL
     //
-    'Use tags like you have never used them before. This plugin revamps the whole project and global tags concept to provide the user with a clearer process of creating and associating tags to better improve their workflow.' => '',
+    'Manage project and global tags with clearer navigation, filtering, styling references and accessible display options.' => '',
     'Tags management' => 'Tag Manager',
     'Global tags management' => 'Tag Manager',
     'Project tags management' => 'Project Tags',
@@ -40,6 +40,7 @@ return array(
     // task/details.php
     //
     'Associated Tags' => '',
+    'Associated Tags:' => '',
     //
     // project_header/dropdown.php
     //

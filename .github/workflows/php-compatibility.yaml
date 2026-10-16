@@ -1,3 +1,4 @@
+---
 name: PHP Compatibility
 
 on:
@@ -86,3 +87,6 @@ jobs:
           }
           echo $pluginName." loaded on Kanboard ".APP_VERSION." with PHP ".PHP_VERSION.PHP_EOL;
           PHP
+
+      - name: Run focused regression checks
+        run: php -d error_reporting=E_ALL -d display_errors=1 plugin/tests/run.php kanboard
