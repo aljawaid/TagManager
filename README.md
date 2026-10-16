@@ -31,26 +31,29 @@
     </a>
 </p>
 
-Use tags like you have never used them before. This plugin revamps the whole project and global tags concept to provide the user with a clearer process of creating and associating tags to better improve their workflow.
+TagManager provides clearer project and global tag administration, board filtering, stable styling references and accessible display options.
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Features
 
-- Use better svg icons to identifiy between project and global tags
-- Add Tag Filter to Project Board
-- Choose from a large selection of colors in the [ColorManager](https://github.com/aljawaid/ColorManager) created specifically for tags
-- Show HTML/CSS ID and classes for each tag for further custom styling
+- Distinguish project and global tags with dedicated SVG icons
+- Filter project boards by tag
+- Choose filled or transparent task-tag presentation from the administrator settings
+- Retain each configured tag colour as a border when transparent presentation is enabled
+- Use the larger colour selection provided by [ColorManager](https://github.com/aljawaid/ColorManager)
+- Show stable HTML/CSS IDs and classes for further custom styling
+- Render compact inline tags in Task2PDF output to prevent overlapping content
 
 **Global Tags**
 - Show tag counts
-- Show actual colours with values  
+- Show actual colours with values
 
 **Project Tags**
 - Show tag counts
-- Add direct link to project tags in the project dropdown menu with tag count
-- Show global tags with project tags in the Project Settings
-- Show project tags in a seperate section above the task description
+- Add a direct link to project tags in the project dropdown menu
+- Show global tags alongside project tags in Project Settings
+- Show project tags in a separate section beneath the task details
 - Show actual colours with values
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#usage">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
@@ -101,6 +104,8 @@ Go to `Settings` &#10562; `Global Tags`
 
 Go to `Project Board` &#10562; `Tag Filter`
 
+Administrators can choose the site-wide task-tag appearance at `Settings` &#10562; `Tag appearance`. The default **Coloured tags** mode preserves the existing filled pills. **Transparent tags** removes the fill from task tags while retaining their configured colour as a border, which can improve legibility on coloured cards. This is an interim visibility option; it does not replace tag names with icons.
+
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8592; Previous</a>] [<a href="#authors--contributors">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Installation & Compatibility
@@ -124,10 +129,11 @@ Go to `Project Board` &#10562; `Tag Filter`
 <details>
     <summary><strong>Compatibility</strong></summary>
 
-- Requires [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.20`
+- Requires [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.54`
+- Tested with PHP `8.2`, `8.3`, `8.4` and `8.5`
 - **Other Plugins & Action Plugins**
-  - _No known issues_
   - Compatible with [ColorManager](https://github.com/aljawaid/ColorManager), [Glancer](https://github.com/aljawaid/Glancer)
+  - Includes a print-specific inline rendering path for Task2PDF `1.8.0`
   - Replaces [KanboardColorfulTags](https://github.com/ThomasTJdev/KanboardColorfulTags)
 - **Core Files & Templates**
   - `02` Template overrides
@@ -138,6 +144,7 @@ Go to `Project Board` &#10562; `Tag Filter`
     <summary><strong>Translations</strong></summary>
 
 - English (UK)
+- Portuguese (Brazil)
 - _Starter template available_
 
 </details>

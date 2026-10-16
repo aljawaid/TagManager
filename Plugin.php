@@ -97,12 +97,12 @@ class Plugin extends Base
 
     public function getPluginVersion()
     {
-        return '1.6.0';
+        return '1.7.0';
     }
 
     public function getCompatibleVersion()
     {
-        return '>=1.2.20';
+        return '>=1.2.54';
     }
 
     public function getPluginHomepage()

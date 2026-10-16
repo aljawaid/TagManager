@@ -14,6 +14,15 @@
 
 _Note: The `/plugins` folder is case-sensitive._
 
+## Compatibility
+
+- Kanboard `1.2.54` or later
+- PHP `8.2` to `8.5`
+- No database migration is required; the optional display mode uses Kanboard's existing configuration storage
+- Task2PDF `1.8.0` receives a compact inline tag list rather than the interactive task-detail markup
+
+After upgrading, open `Settings` &#10562; `Tag appearance`, confirm the preferred site-wide display mode, then check a tagged task on both a board and its task-details page.
+
 - **Install using Git CLI**
   - `git clone` (_or ftp upload_) and extract the `.zip` file into this folder: `.\plugins\` (must be exact case)
 
