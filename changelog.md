@@ -5,7 +5,7 @@
 _(most recent changes are listed on top):_
 
 - NEW: Add an administrator-controlled transparent tag display option while retaining configured colour borders (relates to #14)
-- FIX: Render compact inline tags in Task2PDF output to prevent overlapping content (relates to #8)
+- FIX: Render compact inline tags in Task2PDF output to prevent overlapping content (closes #8)
 - FIX: Make tag administration responsive and theme-aware while preserving smooth transitions and reduced-motion support
 - FIX: Use portable plugin asset paths for Kanboard subdirectory installations
 - FIX: Generate stable CSS classes without placing raw tag names in markup

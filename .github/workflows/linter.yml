@@ -84,8 +84,6 @@ jobs:
           SUPPRESS_POSSUM: true
           VALIDATE_CSS: true
           VALIDATE_GITHUB_ACTIONS: true
-          # Repository feature checks do not require an unrelated secret scan.
-          VALIDATE_GITLEAKS: false
           VALIDATE_HTML: true
           # VALIDATE_JAVA: true
           VALIDATE_JAVASCRIPT_ES: true
