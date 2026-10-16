@@ -66,16 +66,14 @@
                 <td class="text-center" rowspan="" colspan="">
                     <?= $this->text->e($tag['id']) ?>
                 </td>
-                <?php
-                $trimmed = str_replace(array(' ', '|'), '-', $this->text->e($tag['name']));
-                ?>
+                <?php $tagClass = $this->tagManager->getTagCssClass($tag['name'], $tag['id']); ?>
                 <td rowspan="" colspan="">
                     <code class="css-id" title="<?= t('HTML') ?>">id="tagID-<?= $this->text->e($tag['id']) ?>"</code>
                     <code class="css-id" title="<?= t('CSS') ?>">#tagID-<?= $this->text->e($tag['id']) ?></code>
                 </td>
                 <td rowspan="" colspan="">
-                    <code class="css-class" title="<?= t('HTML') ?>">class="tag-<?php echo strtolower($trimmed); ?>"</code>
-                    <code class="css-class" title="<?= t('CSS') ?>">.tag-<?php echo strtolower($trimmed); ?></code>
+                    <code class="css-class" title="<?= t('HTML') ?>">class="<?= $this->text->e($tagClass) ?>"</code>
+                    <code class="css-class" title="<?= t('CSS') ?>">.<?= $this->text->e($tagClass) ?></code>
                 </td>
                 <td class="tag-actions">
                     <ul class="">
