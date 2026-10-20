@@ -1,9 +1,12 @@
 # Changelog
 
-## v1.7
+## v1.7.0
 
 _(most recent changes are listed on top):_
-
+- FIX: Complete Translations And PHP Compatibility Checks
+- FIX: Improve Responsive Theme-Aware Tag Presentation
+- NEW: Add Transparent Tag Display Option
+- FIX: BUG: Correct Tag Rendering And Task2PDF Compatibility
 - NEW: Add an administrator-controlled transparent tag display option while retaining configured colour borders (relates to #14)
 - FIX: Render compact inline tags in Task2PDF output to prevent overlapping content (closes #8)
 - FIX: Make tag administration responsive and theme-aware while preserving smooth transitions and reduced-motion support
