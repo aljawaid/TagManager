@@ -60,7 +60,7 @@
                     </svg>
                     <?= $this->text->e($tag['name']) ?>
                 </td>
-                <td class="text-center task-tag <?= $tag['color_id'] ? "color-{$tag['color_id']}" : '' ?>">
+                <td class="text-center task-tag <?= $tag['color_id'] ? 'color-'.$this->text->e($tag['color_id']) : '' ?>">
                     <?= $this->text->e($colors[$tag['color_id']] ?? '') ?>
                 </td>
                 <td class="text-center" rowspan="" colspan="">

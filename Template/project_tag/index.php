@@ -101,7 +101,7 @@
                     </svg>
                     <?= $this->text->e($tag['name']) ?>
                     </td>
-                    <td class="text-center task-tag <?= $tag['color_id'] ? "color-{$tag['color_id']}" : '' ?>" rowspan="" colspan="">
+                    <td class="text-center task-tag <?= $tag['color_id'] ? 'color-'.$this->text->e($tag['color_id']) : '' ?>" rowspan="" colspan="">
                         <?= $this->text->e($colors[$tag['color_id']] ?? '') ?>
                     </td>
                     <td class="text-center" rowspan="" colspan="">
@@ -195,7 +195,7 @@
                     </svg>
                     <?= $this->text->e($gTag['name']) ?>
                 </td>
-                <td class="text-center task-tag <?= $gTag['color_id'] ? "color-{$gTag['color_id']}" : '' ?>">
+                <td class="text-center task-tag <?= $gTag['color_id'] ? 'color-'.$this->text->e($gTag['color_id']) : '' ?>">
                     <?= $this->text->e($colors[$gTag['color_id']] ?? '') ?>
                 </td>
                 <td class="text-center" rowspan="" colspan="">
