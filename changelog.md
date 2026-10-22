@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.7.1
+
+_(most recent changes are listed on top):_
+- SECURITY FIX: Escape Tag Colour Identifiers
+
 ## v1.7.0
 
 _(most recent changes are listed on top):_

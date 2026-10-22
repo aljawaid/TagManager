@@ -130,6 +130,7 @@ Administrators can choose the site-wide task-tag appearance at `Settings` &#1056
     <summary><strong>Compatibility</strong></summary>
 
 - Requires [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.54`
+- Tested with Kanboard `1.2.56`
 - Tested with PHP `8.2`, `8.3`, `8.4` and `8.5`
 - **Other Plugins & Action Plugins**
   - Compatible with [ColorManager](https://github.com/aljawaid/ColorManager), [Glancer](https://github.com/aljawaid/Glancer)
